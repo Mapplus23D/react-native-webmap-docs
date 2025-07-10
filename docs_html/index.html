@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap3d开发文档开发文档</title>
+
+    <style type="text/css">
+
+      #doc-container {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .main-container {
+        display: flex;
+        height: calc(100% - 40px);
+      }
+
+      .main-header {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding: 0 20px;
+
+        strong {
+          text-align: center;
+          width: calc(100% - 120px);
+          margin-left: 40px;
+          margin-right: 20px;
+        }
+
+        .search-btn {
+          position: relative;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .sidebar {
+        background-color: #f4f4f4;
+        padding: 20px;
+        width: 250px; /* 或者使用flex-basis来设置 */
+        height: calc(100vh - 40px);
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+
+      #content {
+        flex-grow: 1; /* 使内容区域填充剩余空间 */
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: hidden;
+      }
+
+      /* BODY
+      =============================================================================*/
+
+      html, body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+        font-size: 16px;
+        width: 100%;
+        color: #222;
+        padding: 0 5px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      a.current {
+        background-color: #d6d8da;
+        color: #4183C4;
+      }
+
+      .strikethrough {
+        text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 20px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      ul li {
+        display: flex;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+
+      /* DIALOG */
+
+      #tsd-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: fade-in var(--modal-animation-duration) forwards;
+      }
+
+      dialog {
+        border: none;
+        outline: none;
+        padding: 0;
+        background-color: #f2f4f8;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      #tsd-search-input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 0.625rem;
+        outline: 0;
+        border: 2px solid #c5c7c9;
+        background-color: transparent;
+        color: #222;
+        border-radius: 4px;
+        height: 2.5rem;
+        flex: 0 0 auto;
+        font-size: 0.875rem;
+        transition: border-color 0.2s, background-color 0.2s;
+      }
+
+      #tsd-search[open] {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 32rem;
+        max-width: 90vw;
+        max-height: calc(100vh - env(keyboard-inset-height, 0px) - 25vh);
+        margin-top: 10vh;
+        border-radius: 6px;
+        will-change: max-height;
+
+        animation: fade-in var(--modal-animation-duration) ease-out forwards;
+      }
+
+      #tsd-search-results {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+      }
+
+      #tsd-search-status {
+        flex: 1;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        overflow-wrap: anywhere;
+      }
+
+      .closing {
+        display: none !important;
+        pointer-events: none !important;
+      }
+
+      .overlay {
+        content: "";
+        display: block;
+        position: fixed;
+        z-index: 1023;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        visibility: hidden;
+      }
+
+    </style>
+    <style
+      data-for="filters">html:not(.filter-inherited) .tsd-is-inherited { display: none; }</style>
+  </head>
+  <body>
+    <script src='./utils/modal.js'></script>
+    <script src='./utils/searchUtil.js'></script>
+    <div id="doc-container">
+      <div class="main-header">
+        <strong>react-native-webmap3d开发文档</strong>
+        <img src='./assets/icon_search.png' class='search-btn'
+          onclick='openSearch()' />
+      </div>
+      <div class="main-container">
+        <aside id="sidebar-list" class="sidebar">
+
+<p><a data-type="README.html"><strong>react-native-webmap开发文档</strong></a></p>
+<hr>
+<h1>react-native-webmap开发文档</h1>
+<h2>主要接口</h2>
+<ul>
+<li><a data-type="interfaces/ClientModule.html">ClientModule</a></li>
+<li><a data-type="type-aliases/IBaseLayers.html">IBaseLayers</a></li>
+<li><a data-type="type-aliases/IDatasources.html">IDatasources</a></li>
+<li><a data-type="type-aliases/ILayers.html">ILayers</a></li>
+<li><a data-type="type-aliases/ITheme.html">ITheme</a></li>
+<li><a data-type="type-aliases/IRasterTileProvider.html">IRasterTileProvider</a></li>
+<li><a data-type="type-aliases/ISSymbolLibrary.html">ISSymbolLibrary</a></li>
+<li><a data-type="type-aliases/IDataConverter.html">IDataConverter</a></li>
+<li><a data-type="type-aliases/ICoordTrans.html">ICoordTrans</a></li>
+<li><a data-type="type-aliases/IGeometrist.html">IGeometrist</a></li>
+</ul>
+<h2>Enumerations</h2>
+<ul>
+<li><a data-type="enumerations/Action.html">Action</a></li>
+<li><a data-type="enumerations/BingMapsStyle.html">BingMapsStyle</a></li>
+<li><a data-type="enumerations/ColorSchemeType.html">ColorSchemeType</a></li>
+<li><a data-type="enumerations/RangeMode.html">RangeMode</a></li>
+<li><a data-type="enumerations/TextAlign.html">TextAlign</a></li>
+<li><a data-type="enumerations/TiandituMapsStyle.html">TiandituMapsStyle</a></li>
+</ul>
+<h2>Interfaces</h2>
+<ul>
+<li><a data-type="interfaces/CalloutOption.html">CalloutOption</a></li>
+<li><a data-type="interfaces/ClientOption.html">ClientOption</a></li>
+<li><a data-type="interfaces/ClusterParam.html">ClusterParam</a></li>
+<li><a data-type="interfaces/ContourLine.html">ContourLine</a></li>
+<li><a data-type="interfaces/DashedLine.html">DashedLine</a></li>
+<li><a data-type="interfaces/DatasourceBase.html">DatasourceBase</a></li>
+<li><a data-type="interfaces/ExccelImportFail.html">ExccelImportFail</a></li>
+<li><a data-type="interfaces/ExcelData.html">ExcelData</a></li>
+<li><a data-type="interfaces/ExcelImportParam.html">ExcelImportParam</a></li>
+<li><a data-type="interfaces/ExcelImportSucess.html">ExcelImportSucess</a></li>
+<li><a data-type="interfaces/GeoJSONImportFill.html">GeoJSONImportFill</a></li>
+<li><a data-type="interfaces/GeoJSONImportLine.html">GeoJSONImportLine</a></li>
+<li><a data-type="interfaces/GeoJSONImportParam.html">GeoJSONImportParam</a></li>
+<li><a data-type="interfaces/GeoJSONImportPoint.html">GeoJSONImportPoint</a></li>
+<li><a data-type="interfaces/IBaiduRasterData.html">IBaiduRasterData</a></li>
+<li><a data-type="interfaces/ICalloutStyle.html">ICalloutStyle</a></li>
+<li><a data-type="interfaces/IClickEvent.html">IClickEvent</a></li>
+<li><a data-type="interfaces/IColorScheme.html">IColorScheme</a></li>
+<li><a data-type="interfaces/IFieldInfo.html">IFieldInfo</a></li>
+<li><a data-type="interfaces/IFillCollection.html">IFillCollection</a></li>
+<li><a data-type="interfaces/IFillData.html">IFillData</a></li>
+<li><a data-type="interfaces/IFillFeature.html">IFillFeature</a></li>
+<li><a data-type="interfaces/IFillLayer.html">IFillLayer</a></li>
+<li><a data-type="interfaces/IFillStyle.html">IFillStyle</a></li>
+<li><a data-type="interfaces/IGeoJSONDatasource.html">IGeoJSONDatasource</a></li>
+<li><a data-type="interfaces/IGeoJSONFeature.html">IGeoJSONFeature</a></li>
+<li><a data-type="interfaces/IGeoJSONFeatureCollection.html">IGeoJSONFeatureCollection</a></li>
+<li><a data-type="interfaces/IGeoJSONGeometryCollection.html">IGeoJSONGeometryCollection</a></li>
+<li><a data-type="interfaces/IGeoJSONLine.html">IGeoJSONLine</a></li>
+<li><a data-type="interfaces/IGeoJSONMultiLine.html">IGeoJSONMultiLine</a></li>
+<li><a data-type="interfaces/IGeoJSONMultiPoint.html">IGeoJSONMultiPoint</a></li>
+<li><a data-type="interfaces/IGeoJSONMultiPolygon.html">IGeoJSONMultiPolygon</a></li>
+<li><a data-type="interfaces/IGeoJSONPoint.html">IGeoJSONPoint</a></li>
+<li><a data-type="interfaces/IGeoJSONPolygon.html">IGeoJSONPolygon</a></li>
+<li><a data-type="interfaces/IGeometryEvent.html">IGeometryEvent</a></li>
+<li><a data-type="interfaces/IIServerRasterData.html">IIServerRasterData</a></li>
+<li><a data-type="interfaces/ILayerBase.html">ILayerBase</a></li>
+<li><a data-type="interfaces/ILayerCluster.html">ILayerCluster</a></li>
+<li><a data-type="interfaces/ILayerGroup.html">ILayerGroup</a></li>
+<li><a data-type="interfaces/ILayerImage.html">ILayerImage</a></li>
+<li><a data-type="interfaces/ILayerText.html">ILayerText</a></li>
+<li><a data-type="interfaces/ILayerTheme.html">ILayerTheme</a></li>
+<li><a data-type="interfaces/ILayerVector.html">ILayerVector</a></li>
+<li><a data-type="interfaces/ILicenseActivateResult.html">ILicenseActivateResult</a></li>
+<li><a data-type="interfaces/ILicenseInfo.html">ILicenseInfo</a></li>
+<li><a data-type="interfaces/ILineCollection.html">ILineCollection</a></li>
+<li><a data-type="interfaces/ILineData.html">ILineData</a></li>
+<li><a data-type="interfaces/ILineFeature.html">ILineFeature</a></li>
+<li><a data-type="interfaces/ILineLayer.html">ILineLayer</a></li>
+<li><a data-type="interfaces/ILineStyle.html">ILineStyle</a></li>
+<li><a data-type="interfaces/ImportResult.html">ImportResult</a></li>
+<li><a data-type="interfaces/INativeRasterData.html">INativeRasterData</a></li>
+<li><a data-type="interfaces/IPointCollection.html">IPointCollection</a></li>
+<li><a data-type="interfaces/IPointData.html">IPointData</a></li>
+<li><a data-type="interfaces/IPointFeature.html">IPointFeature</a></li>
+<li><a data-type="interfaces/IPointLayer.html">IPointLayer</a></li>
+<li><a data-type="interfaces/IPointStyle.html">IPointStyle</a></li>
+<li><a data-type="interfaces/IRasterTileDatasource.html">IRasterTileDatasource</a></li>
+<li><a data-type="interfaces/ISymbolFill.html">ISymbolFill</a></li>
+<li><a data-type="interfaces/ISymbolItem.html">ISymbolItem</a></li>
+<li><a data-type="interfaces/ISymbolLibrary.html">ISymbolLibrary</a></li>
+<li><a data-type="interfaces/ISymbolLine.html">ISymbolLine</a></li>
+<li><a data-type="interfaces/ISymbolPoint.html">ISymbolPoint</a></li>
+<li><a data-type="interfaces/ITextStyle.html">ITextStyle</a></li>
+<li><a data-type="interfaces/IThemeLabel.html">IThemeLabel</a></li>
+<li><a data-type="interfaces/IThemeLabelBase.html">IThemeLabelBase</a></li>
+<li><a data-type="interfaces/IThemeLabelLayer.html">IThemeLabelLayer</a></li>
+<li><a data-type="interfaces/IThemeLabelRange.html">IThemeLabelRange</a></li>
+<li><a data-type="interfaces/IThemeLabelRangeItem.html">IThemeLabelRangeItem</a></li>
+<li><a data-type="interfaces/IThemeLabelRangeLayer.html">IThemeLabelRangeLayer</a></li>
+<li><a data-type="interfaces/IThemeLabelUnique.html">IThemeLabelUnique</a></li>
+<li><a data-type="interfaces/IThemeLabelUniqueItem.html">IThemeLabelUniqueItem</a></li>
+<li><a data-type="interfaces/IThemeLabelUniqueLayer.html">IThemeLabelUniqueLayer</a></li>
+<li><a data-type="interfaces/IThemeRange.html">IThemeRange</a></li>
+<li><a data-type="interfaces/IThemeRangeItem.html">IThemeRangeItem</a></li>
+<li><a data-type="interfaces/IThemeRangeLayer.html">IThemeRangeLayer</a></li>
+<li><a data-type="interfaces/IThemeUnique.html">IThemeUnique</a></li>
+<li><a data-type="interfaces/IThemeUniqueItem.html">IThemeUniqueItem</a></li>
+<li><a data-type="interfaces/IThemeUniqueLayer.html">IThemeUniqueLayer</a></li>
+<li><a data-type="interfaces/IVectorTileDatasource.html">IVectorTileDatasource</a></li>
+<li><a data-type="interfaces/IWebMap.html">IWebMap</a></li>
+<li><a data-type="interfaces/LayerIndex.html">LayerIndex</a></li>
+<li><a data-type="interfaces/LinePatternBase.html">LinePatternBase</a></li>
+<li><a data-type="interfaces/MessagerHandlers.html">MessagerHandlers</a></li>
+<li><a data-type="interfaces/RulerLine.html">RulerLine</a></li>
+<li><a data-type="interfaces/SelectOption.html">SelectOption</a></li>
+<li><a data-type="interfaces/Spec.html">Spec</a></li>
+<li><a data-type="interfaces/WallLine.html">WallLine</a></li>
+<li><a data-type="interfaces/WebMapEvent.html">WebMapEvent</a></li>
+</ul>
+<h2>Type Aliases</h2>
+<ul>
+<li><a data-type="type-aliases/AddBaseLayerParam.html">AddBaseLayerParam</a></li>
+<li><a data-type="type-aliases/AddLayerParam.html">AddLayerParam</a></li>
+<li><a data-type="type-aliases/AddSourceParam.html">AddSourceParam</a></li>
+<li><a data-type="type-aliases/Anchor.html">Anchor</a></li>
+<li><a data-type="type-aliases/AsyncFunction.html">AsyncFunction</a></li>
+<li><a data-type="type-aliases/Client.html">Client</a></li>
+<li><a data-type="type-aliases/Coordsys.html">Coordsys</a></li>
+<li><a data-type="type-aliases/GeoJSONImportResult.html">GeoJSONImportResult</a></li>
+<li><a data-type="type-aliases/IColor.html">IColor</a></li>
+<li><a data-type="type-aliases/IDatasource.html">IDatasource</a></li>
+<li><a data-type="type-aliases/IGeoJSONData.html">IGeoJSONData</a></li>
+<li><a data-type="type-aliases/IGeoJSONPosition.html">IGeoJSONPosition</a></li>
+<li><a data-type="type-aliases/IGeometryType.html">IGeometryType</a></li>
+<li><a data-type="type-aliases/IGeoStyle.html">IGeoStyle</a></li>
+<li><a data-type="type-aliases/ILayer.html">ILayer</a></li>
+<li><a data-type="type-aliases/IMapControl.html">IMapControl</a></li>
+<li><a data-type="type-aliases/IPoint2D.html">IPoint2D</a></li>
+<li><a data-type="type-aliases/IRasterTileData.html">IRasterTileData</a></li>
+<li><a data-type="type-aliases/LinePattern.html">LinePattern</a></li>
+<li><a data-type="type-aliases/MessagerSendHandler.html">MessagerSendHandler</a></li>
+<li><a data-type="type-aliases/OmitLayerParam.html">OmitLayerParam</a></li>
+<li><a data-type="type-aliases/TColorSchemeType.html">TColorSchemeType</a></li>
+<li><a data-type="type-aliases/TFieldType.html">TFieldType</a></li>
+<li><a data-type="type-aliases/TLayerType.html">TLayerType</a></li>
+</ul>
+<h2>Functions</h2>
+<ul>
+<li><a data-type="functions/createClient.html">createClient</a></li>
+</ul>
+
+
+      </aside>
+        <object id="content" data="./README.html" type="text/html"></object>
+      </div>
+    </div>
+
+    <dialog id="tsd-search" aria-label="Search" class>
+      <input role="combobox"
+        id="tsd-search-input" aria-controls="tsd-search-results"
+        aria-autocomplete="list" aria-expanded="true" autocapitalize="off"
+        autocomplete="off" placeholder="Search the docs" maxlength="100"
+        aria-activedescendant>
+      <ul role="listbox" id="tsd-search-results"></ul>
+      <div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+      </div>
+    </dialog>
+    <div class="overlay"></div>
+    <script type="text/javascript">
+      init()
+    </script>
+  </body>
+</html>

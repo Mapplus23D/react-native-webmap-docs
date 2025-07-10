@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap开发文档开发文档</title>
+
+    <style type="text/css">
+
+      /* BODY
+      =============================================================================*/
+
+      html {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 20px;
+        border: 0;
+        overflow: auto;
+        height: calc(100vh - 40px);
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .strikethrough {
+          text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 30px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+
+<h1>Type Alias: IMapControl</h1>
+<blockquote>
+<p><strong>IMapControl</strong> = <code>object</code></p>
+</blockquote>
+
+<p>地图控制组件</p>
+<p>包含地图打开，关闭，重命名</p>
+<p>获取和设置地图数据，中心点，坐标系，比例尺等</p>
+<p>管理图层，数据源等</p>
+<h2>Properties</h2>
+<h3>addCallout()</h3>
+<blockquote>
+<p><strong>addCallout</strong>: (<code>name</code>, <code>options</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>添加callout</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>callout名称</p>
+<h5>options</h5>
+<p><code>Omit</code>&lt;<a href="../interfaces/CalloutOption.html"><code>CalloutOption</code></a>, <code>&quot;className&quot;</code>&gt; &amp; <code>object</code></p>
+<p>callout参数</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>addTouchPoint()</h3>
+<blockquote>
+<p><strong>addTouchPoint</strong>: (<code>px</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>在屏幕指定位置模拟一次点击</p>
+<h4>Parameters</h4>
+<h5>px</h5>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<p>屏幕像素点</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>appointEditGeometry()</h3>
+<blockquote>
+<p><strong>appointEditGeometry</strong>: (<code>layerId</code>, <code>geoId</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>指定编辑对象</p>
+<p>编辑对象需要在可编辑图层上</p>
+<h4>Parameters</h4>
+<h5>layerId</h5>
+<p><code>string</code></p>
+<p>图层id</p>
+<h5>geoId</h5>
+<p><code>number</code></p>
+<p>要指定的几何对象id</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<p>成功返回 true，失败返回 false</p>
+<hr>
+<h3>baseLayers()</h3>
+<blockquote>
+<p><strong>baseLayers</strong>: () =&gt; <a href="../interfaces/ILayerImage.html"><code>ILayerImage</code></a>[]</p>
+</blockquote>
+
+<p>底图管理对象</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/ILayerImage.html"><code>ILayerImage</code></a>[]</p>
+<hr>
+<h3>capture()</h3>
+<blockquote>
+<p><strong>capture</strong>: () =&gt; <code>string</code></p>
+</blockquote>
+
+<p>截图</p>
+<h4>Returns</h4>
+<p><code>string</code></p>
+<p>png 类型的 base64 字符串</p>
+<hr>
+<h3>closeMap()</h3>
+<blockquote>
+<p><strong>closeMap</strong>: () =&gt; <code>void</code></p>
+</blockquote>
+
+<p>关闭当前地图</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>datasources()</h3>
+<blockquote>
+<p><strong>datasources</strong>: () =&gt; <a href="IDatasource.html"><code>IDatasource</code></a>[]</p>
+</blockquote>
+
+<p>数据源管理对象</p>
+<h4>Returns</h4>
+<p><a href="IDatasource.html"><code>IDatasource</code></a>[]</p>
+<hr>
+<h3>flyTo()</h3>
+<blockquote>
+<p><strong>flyTo</strong>: (<code>param</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>飞行到某一位置</p>
+<h4>Parameters</h4>
+<h5>param</h5>
+<p>飞行参数</p>
+<h6>center</h6>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<h6>duration?</h6>
+<p><code>number</code></p>
+<h6>scale?</h6>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>getAction()</h3>
+<blockquote>
+<p><strong>getAction</strong>: () =&gt; <a href="../enumerations/Action.html"><code>Action</code></a></p>
+</blockquote>
+
+<p>获取当前地图操作状态</p>
+<h4>Returns</h4>
+<p><a href="../enumerations/Action.html"><code>Action</code></a></p>
+<hr>
+<h3>getBackgroundColor()</h3>
+<blockquote>
+<p><strong>getBackgroundColor</strong>: () =&gt; <a href="IColor.html"><code>IColor</code></a></p>
+</blockquote>
+
+<p>获取地图底色</p>
+<h4>Returns</h4>
+<p><a href="IColor.html"><code>IColor</code></a></p>
+<hr>
+<h3>getCenter()</h3>
+<blockquote>
+<p><strong>getCenter</strong>: () =&gt; <a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+</blockquote>
+
+<p>获取当前地图中心点坐标</p>
+<h4>Returns</h4>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<hr>
+<h3>getDynamicProjection()</h3>
+<blockquote>
+<p><strong>getDynamicProjection</strong>: () =&gt; <code>boolean</code></p>
+</blockquote>
+
+<p>获取是否开启动态投影</p>
+<h4>Returns</h4>
+<p><code>boolean</code></p>
+<hr>
+<h3>getMap()</h3>
+<blockquote>
+<p><strong>getMap</strong>: () =&gt; <a href="../interfaces/IWebMap.html"><code>IWebMap</code></a></p>
+</blockquote>
+
+<p>以JSON形式获取当前的地图</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/IWebMap.html"><code>IWebMap</code></a></p>
+<p>当前地图对象</p>
+<hr>
+<h3>getMaxScale()</h3>
+<blockquote>
+<p><strong>getMaxScale</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+
+<p>获取当前地图最大比例尺</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<hr>
+<h3>getMinScale()</h3>
+<blockquote>
+<p><strong>getMinScale</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+
+<p>获取当前地图最小比例尺</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<hr>
+<h3>getScale()</h3>
+<blockquote>
+<p><strong>getScale</strong>: () =&gt; <code>number</code></p>
+</blockquote>
+
+<p>获取当前地图的比例尺</p>
+<h4>Returns</h4>
+<p><code>number</code></p>
+<hr>
+<h3>getSelectOption()</h3>
+<blockquote>
+<p><strong>getSelectOption</strong>: () =&gt; <a href="../interfaces/SelectOption.html"><code>SelectOption</code></a></p>
+</blockquote>
+
+<p>获取selctOption</p>
+<h4>Returns</h4>
+<p><a href="../interfaces/SelectOption.html"><code>SelectOption</code></a></p>
+<hr>
+<h3>getViewBounds()</h3>
+<blockquote>
+<p><strong>getViewBounds</strong>: () =&gt; <code>Rectangle2D</code></p>
+</blockquote>
+
+<p>获取当前地图可见范围</p>
+<h4>Returns</h4>
+<p><code>Rectangle2D</code></p>
+<hr>
+<h3>layers()</h3>
+<blockquote>
+<p><strong>layers</strong>: () =&gt; <a href="ILayer.html"><code>ILayer</code></a>[]</p>
+</blockquote>
+
+<p>图层管理对象</p>
+<h4>Returns</h4>
+<p><a href="ILayer.html"><code>ILayer</code></a>[]</p>
+<hr>
+<h3>mapToPx()</h3>
+<blockquote>
+<p><strong>mapToPx</strong>: (<code>map</code>) =&gt; <a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+</blockquote>
+
+<p>地图经纬度点转屏幕像素点</p>
+<h4>Parameters</h4>
+<h5>map</h5>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<p>地图经纬度点</p>
+<h4>Returns</h4>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<p>屏幕像素点</p>
+<hr>
+<h3>openMap()</h3>
+<blockquote>
+<p><strong>openMap</strong>: (<code>webmap</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>打开地图</p>
+<h4>Parameters</h4>
+<h5>webmap</h5>
+<p><a href="../interfaces/IWebMap.html"><code>IWebMap</code></a></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>panTo()</h3>
+<blockquote>
+<p><strong>panTo</strong>: (<code>center</code>, <code>duration</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>平移到指定位置</p>
+<h4>Parameters</h4>
+<h5>center</h5>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<p>指定中心点位置</p>
+<h5>duration</h5>
+<p><code>number</code></p>
+<p>平移动画时长，单位毫秒, default: 0</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>pxToMap()</h3>
+<blockquote>
+<p><strong>pxToMap</strong>: (<code>px</code>) =&gt; <a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+</blockquote>
+
+<p>像素点转地图经纬度点</p>
+<h4>Parameters</h4>
+<h5>px</h5>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<p>屏幕像素点</p>
+<h4>Returns</h4>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<p>经纬度点</p>
+<hr>
+<h3>refresh()</h3>
+<blockquote>
+<p><strong>refresh</strong>: () =&gt; <code>void</code></p>
+</blockquote>
+
+<p>刷新地图</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>removeAllCallouts()</h3>
+<blockquote>
+<p><strong>removeAllCallouts</strong>: () =&gt; <code>void</code></p>
+</blockquote>
+
+<p>移除所有callout</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>removeCallout()</h3>
+<blockquote>
+<p><strong>removeCallout</strong>: (<code>name</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>移除指定callout</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>要移除的callout名称</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>rename()</h3>
+<blockquote>
+<p><strong>rename</strong>: (<code>name</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>重命名地图</p>
+<h4>Parameters</h4>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>新的地图名</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setAction()</h3>
+<blockquote>
+<p><strong>setAction</strong>: (<code>action</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置地图操作状态</p>
+<h4>Parameters</h4>
+<h5>action</h5>
+<p><a href="../enumerations/Action.html"><code>Action</code></a></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setBackgroundColor()</h3>
+<blockquote>
+<p><strong>setBackgroundColor</strong>: (<code>color?</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置地图底色</p>
+<h4>Parameters</h4>
+<h5>color?</h5>
+<p><a href="IColor.html"><code>IColor</code></a></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setCenter()</h3>
+<blockquote>
+<p><strong>setCenter</strong>: (<code>center</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置当前地图中心点坐标</p>
+<h4>Parameters</h4>
+<h5>center</h5>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setDynamicProjection()</h3>
+<blockquote>
+<p><strong>setDynamicProjection</strong>: (<code>enable</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置开启动态投影</p>
+<h4>Parameters</h4>
+<h5>enable</h5>
+<p><code>boolean</code></p>
+<p>是否开启动态投影</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setMaxScale()</h3>
+<blockquote>
+<p><strong>setMaxScale</strong>: (<code>maxScale?</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置当前地图最大比例尺</p>
+<h4>Parameters</h4>
+<h5>maxScale?</h5>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setMinScale()</h3>
+<blockquote>
+<p><strong>setMinScale</strong>: (<code>minScale?</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置当前地图最小比例尺</p>
+<h4>Parameters</h4>
+<h5>minScale?</h5>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setPrjCoordsys()</h3>
+<blockquote>
+<p><strong>setPrjCoordsys</strong>: (<code>type</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置当前地图坐标系</p>
+<h4>Parameters</h4>
+<h5>type</h5>
+<p><a href="Coordsys.html"><code>Coordsys</code></a></p>
+<p>&#39;wgs84&#39; | &#39;gcj02&#39; | &#39;bd09&#39;</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setScale()</h3>
+<blockquote>
+<p><strong>setScale</strong>: (<code>scale</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置当前地图的比例尺</p>
+<h4>Parameters</h4>
+<h5>scale</h5>
+<p><code>number</code></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setSelectOption()</h3>
+<blockquote>
+<p><strong>setSelectOption</strong>: (<code>option</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置selctOption</p>
+<h4>Parameters</h4>
+<h5>option</h5>
+<p><a href="../interfaces/SelectOption.html"><code>SelectOption</code></a></p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>setViewBounds()</h3>
+<blockquote>
+<p><strong>setViewBounds</strong>: (<code>bounds</code>) =&gt; <code>void</code></p>
+</blockquote>
+
+<p>设置当前地图可见范围</p>
+<h4>Parameters</h4>
+<h5>bounds</h5>
+<p><code>Rectangle2D</code></p>
+<p>可见范围</p>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>submit()</h3>
+<blockquote>
+<p><strong>submit</strong>: () =&gt; <code>void</code></p>
+</blockquote>
+
+<ul>
+<li>在绘制模式，提交当前绘制对象</li>
+</ul>
+<h4>Returns</h4>
+<p><code>void</code></p>
+<hr>
+<h3>trash()</h3>
+<blockquote>
+<p><strong>trash</strong>: () =&gt; <code>void</code></p>
+</blockquote>
+
+<ul>
+<li>在选择模式，删除当前选中的可编辑对象</li>
+<li>在绘制模式，删除当前绘制对象</li>
+<li>在节点编辑模式，删除当前选中节点</li>
+</ul>
+<h4>Returns</h4>
+<p><code>void</code></p>
+
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<p><strong>react-native-webmap开发文档</strong></p>
+
+<h1>react-native-webmap</h1>
+<p>地图迦二三维SDK是一款专业、高效的地图开发工具，基于统一渲染内核，覆盖桌面、移动等主流操作平台。提供从数据管理到场景搭建、演播制作的全流程解决方案，支持二维与三维开发，满足多样化的地图应用需求。</p>
+<img src="https://mapplus-tob.oss-cn-beijing.aliyuncs.com/sdk/assets/description.png" width="60%" />
+
+<h2>前提</h2>
+<p>鸿蒙OS请先按照<a target="_blank" href="https://gitcode.com/openharmony-sig/ohos_react_native/blob/master/docs/zh-cn/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">鸿蒙RN文档</a>将RN工程鸿蒙化后再进行以下步骤。</p>
+<h2>安装</h2>
+<pre><code class="language-sh">npm install @mapplus/react-native-webmap
+</code></pre>
+<p>本工程依赖 <code>react-native-webview</code>, 运行以下命令进行安装</p>
+<pre><code class="language-sh">npm install react-native-webview
+</code></pre>
+<p>鸿蒙OS还需要安装鸿蒙适配 webview</p>
+<pre><code class="language-sh">npm install @react-native-oh-tpl/react-native-webview
+</code></pre>
+<h2>配置鸿蒙原生工程</h2>
+<p>鸿蒙RN暂不支持 autolink，需要手动进行配置。</p>
+<p>若事先进行过<code>react-native-webview</code>适配，则可忽略以下步骤中 <code>webview</code> 的相关配置。</p>
+<ul>
+<li><p>在 <code>harmony/entry/oh-package.json5</code> 中添加依赖：</p>
+<pre><code>&quot;dependencies&quot;: {
+    ......
+    &quot;@mapplus/react-native-webmap&quot;: &quot;file:../../node_modules/@mapplus/react-native-webmap/harmony/rn_webmap.har&quot;,
+    &quot;@react-native-oh-tpl/react-native-webview&quot;: &quot;file:../../node_modules/@react-native-oh-tpl/react-native-webview/harmony/rn_webview.har&quot;,
+},
+</code></pre>
+</li>
+<li><p>在 <code>harmony/entry/src/main/cpp/CMakeLists.txt</code>中添加模块：</p>
+<pre><code class="language-CMake">add_subdirectory(&quot;${OH_MODULE_DIR}/@mapplus/react-native-webmap/src/main/cpp&quot; ./webmap)
+add_subdirectory(&quot;${OH_MODULE_DIR}/@react-native-oh-tpl/react-native-webview/src/main/cpp&quot; ./webview)
+
+......
+
+target_link_libraries(rnoh_app PUBLIC rnoh_webmap)
+target_link_libraries(rnoh_app PUBLIC rnoh_webview)
+</code></pre>
+</li>
+<li><p>在 <code>harmony/entry/src/main/cpp/PackageProvider.cpp</code> 中应用模块</p>
+<pre><code class="language-cpp">......
+#include &quot;WebMapPackage.h&quot;
+#include &quot;WebViewPackage.h&quot;
+
+std::vector&lt;std::shared_ptr&lt;Package&gt;&gt; PackageProvider::getPackages(Package::Context ctx) {
+    return {
+        ......
+        std::make_shared&lt;WebMapPackage&gt;(ctx),
+        std::make_shared&lt;WebViewPackage&gt;(ctx),
+    };
+}
+</code></pre>
+</li>
+<li><p>在 <code>harmony/entry/src/main/etc/RNPackagesFactory.ets</code> 中应用模块</p>
+<pre><code class="language-ts">......
+import { WebMapPackage }  from &#39;@mapplus/react-native-webmap/ts&#39;
+import { WebViewPackage } from &#39;@react-native-oh-tpl/react-native-webview/ts&#39;;
+
+export function createRNPackages(ctx: RNPackageContext): RNPackage[] {
+    return [
+        ......
+        new WebMapPackage(ctx),
+        new WebViewPackage(ctx),
+    ];
+}
+</code></pre>
+</li>
+<li><p>在 <code>harmony/entry/src/main/ets/pages/Index.ets</code> 中增加 webview 配置</p>
+<pre><code class="language-ts">......
+import { WebView, WEB_VIEW } from &quot;@react-native-oh-tpl/react-native-webview&quot;
+
+@Builder
+export function buildCustomRNComponent(ctx: ComponentBuilderContext) {
+    if (ctx.componentName === WEB_VIEW) { // 注册 webview 原生组件
+        WebView({
+            ctx: ctx.rnComponentContext,
+            tag: ctx.tag
+        });
+    }
+}
+
+struct Index {
+    build() {
+        Column() {
+            ......
+            RNApp({
+                rnInstanceConfig: {
+                    ......
+                    arkTsComponentNames: [
+                        WEB_VIEW //components 添加 webview
+                    ]
+                },
+                ......
+            })
+        }
+    }   
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<p>配置完成后同步并重新运行整个工程即可。</p>
+<h2>使用</h2>
+<p>使用前请先激活，激活时保持网络畅通。</p>
+<pre><code class="language-ts">import {RTNWebMap} from &#39;@mapplus/react-native-webmap&#39;
+
+async function init() {
+  RTNWebMap.initEnvironment(9988) // 初始化并指定本地服务端口号
+
+  const license = await RTNWebMap.getLicenseInfo()
+  if (!license) {
+    const serial = &#39;XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&#39; //序列号
+    const result = await RTNWebMap.activate(serial)
+    if (result) {
+      console.log(&quot;激活成功&quot;)
+    } else {
+      console.warn(&quot;激活失败&quot;)
+    }
+  } else {
+    console.log(&quot;已激活&quot;)
+  }
+}
+</code></pre>
+<p>激活后获取client地址并通过webview渲染</p>
+<p>创建 <code>MapView.tsx</code></p>
+<pre><code class="language-tsx">import { useMemo, useRef } from &quot;react&quot;
+import { View } from &quot;react-native&quot;
+import WebView from &quot;react-native-webview&quot;
+import { createRNClient, RTNWebMap } from &quot;@mapplus/react-native-webmap&quot;
+
+export default function MapView() {
+  const webViewRef = useRef&lt;WebView&gt;(null)
+
+  const clientUrl = useMemo(() =&gt; {
+    return RTNWebMap.getClientUrl()
+  }, [])
+
+  // 调用 createRNClient 创建一个 react-native 端专用的 client 对象
+  // client 对象负责与 webview 中的 webmap sdk 进行通信
+  const client = useMemo(() =&gt; {
+    const client = createRNClient(() =&gt; {
+      // 返回 webview 引用以便进行消息的发送
+      return webViewRef.current
+    })
+    return client
+  }, [])
+
+  // 初始化好后添加一个高德地图
+  async function onInited() {
+    const id = await client.datasources.add({
+      name: &#39;image_src&#39;,
+      type: &#39;raster&#39;,
+      data: {
+        tiles: [
+          &#39;http://wprd04.is.autonavi.com/appmaptile?x={x}&amp;y={y}&amp;z={z}&amp;lang=zh_cn&amp;size=1&amp;scl=2&amp;style=7&#39;,
+        ],
+        tileSize: 256,
+      },
+    })
+    if (id) {
+      const lid = await client.baseLayers.add({
+        type: &#39;image&#39;,
+        name: &#39;image_layer&#39;,
+        sourceId: id,
+      })
+    }
+    client.mapControl.setCenter({
+      x: 106,
+      y: 32,
+    })
+    client.mapControl.setScale(1 / 100000000)
+  }
+
+  return (
+    &lt;View
+      style={{
+        width: &#39;100%&#39;,
+        height: &#39;100%&#39;,
+      }}&gt;
+      &lt;WebView
+        ref={webViewRef}
+        ignoreSilentHardwareSwitch={true}
+        onMessage={e =&gt; {
+          // 处理来自 webview 中 webmap sdk 发来的消息
+          client.handleMessage(e.nativeEvent.data)
+        }}
+        onLoadEnd={() =&gt; {
+          // 加载完成后，初始化 client 对象，与 webview 中的 webmap sdk 建立联系
+          // 初始化完成后才可以调用 sdk 中的各个方法
+          client.init(undefined, { clientPort: 9988 }).then(() =&gt; {
+            // 初始化成功后便可以调用client内的各种方法了
+            // 比如 client.mapControl.openMap() 打开已有地图等
+             onInited()
+          })
+        }}
+        // 本地的web服务地址，包含实际的 sdk 代码引用
+        source={{ uri: clientUrl }}
+      /&gt;
+    &lt;/View&gt;
+  )
+}
+</code></pre>
+<p>将以上两步结合修改APP.tsx如下, 打开app后显示地图</p>
+<p><code>App.tsx</code></p>
+<pre><code class="language-tsx">
+import { RTNWebMap } from &#39;@mapplus/react-native-webmap&#39;
+import { useEffect, useState } from &quot;react&quot;;
+import MapView from &#39;./MapView&#39;;
+
+export default function App() {
+
+  const [valid, setValid] = useState(false)
+
+  useEffect(() =&gt; {
+    init()
+  }, [])
+
+  async function init() {
+    RTNWebMap.initEnvironment(9988) // 初始化并指定本地服务端口号
+
+    const license = await RTNWebMap.getLicenseInfo()
+    if (!license) {
+      const serial = &#39;XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&#39; //序列号
+      const result = await RTNWebMap.activate(serial)
+      if (result) {
+        console.log(&quot;激活成功&quot;)
+        setValid(true)
+      } else {
+        console.warn(&quot;激活失败&quot;)
+      }
+    } else {
+      console.log(&quot;已激活&quot;)
+      setValid(true)
+    }
+  }
+
+  if (!valid) return null
+
+  return (
+    &lt;MapView /&gt;
+  )
+}
+</code></pre>

@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap开发文档开发文档</title>
+
+    <style type="text/css">
+
+      /* BODY
+      =============================================================================*/
+
+      html {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 20px;
+        border: 0;
+        overflow: auto;
+        height: calc(100vh - 40px);
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .strikethrough {
+          text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 30px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+
+<h1>Interface: WebMapEvent</h1>
+
+<h2>Properties</h2>
+<h3>onActionChange</h3>
+<blockquote>
+<p><strong>onActionChange</strong>: <code>object</code></p>
+</blockquote>
+
+<p>action 切换回调</p>
+<p>主动调用 setAction 不会有此回调</p>
+<h4>action</h4>
+<blockquote>
+<p><strong>action</strong>: <a href="../enumerations/Action.html"><code>Action</code></a></p>
+</blockquote>
+<hr>
+<h3>onCenterChanged</h3>
+<blockquote>
+<p><strong>onCenterChanged</strong>: <code>object</code></p>
+</blockquote>
+
+<p>地图拖动时中心变化</p>
+<h4>centerLat</h4>
+<blockquote>
+<p><strong>centerLat</strong>: <code>number</code></p>
+</blockquote>
+<h4>centerLng</h4>
+<blockquote>
+<p><strong>centerLng</strong>: <code>number</code></p>
+</blockquote>
+<hr>
+<h3>onDrawRectBoundsChange</h3>
+<blockquote>
+<p><strong>onDrawRectBoundsChange</strong>: <code>object</code></p>
+</blockquote>
+
+<p>draw_rect_bounds结果回调</p>
+<h4>bottom</h4>
+<blockquote>
+<p><strong>bottom</strong>: <code>number</code></p>
+</blockquote>
+<h4>left</h4>
+<blockquote>
+<p><strong>left</strong>: <code>number</code></p>
+</blockquote>
+<h4>right</h4>
+<blockquote>
+<p><strong>right</strong>: <code>number</code></p>
+</blockquote>
+<h4>top</h4>
+<blockquote>
+<p><strong>top</strong>: <code>number</code></p>
+</blockquote>
+<hr>
+<h3>onGeometryAdded</h3>
+<blockquote>
+<p><strong>onGeometryAdded</strong>: <a href="IGeometryEvent.html"><code>IGeometryEvent</code></a></p>
+</blockquote>
+
+<p>对象通过手势添加事件</p>
+<hr>
+<h3>onGeometryDeleted</h3>
+<blockquote>
+<p><strong>onGeometryDeleted</strong>: <a href="IGeometryEvent.html"><code>IGeometryEvent</code></a></p>
+</blockquote>
+
+<p>对象通过手势删除事件</p>
+<hr>
+<h3>onGeometryModified</h3>
+<blockquote>
+<p><strong>onGeometryModified</strong>: <a href="IGeometryEvent.html"><code>IGeometryEvent</code></a></p>
+</blockquote>
+
+<p>对象通过手势修改事件</p>
+<hr>
+<h3>onMeasureResult</h3>
+<blockquote>
+<p><strong>onMeasureResult</strong>: <code>object</code></p>
+</blockquote>
+
+<p>量算实时结果回调</p>
+<h4>isFinishied?</h4>
+<blockquote>
+<p><code>optional</code> <strong>isFinishied</strong>: <code>boolean</code></p>
+</blockquote>
+<h4>measureResult</h4>
+<blockquote>
+<p><strong>measureResult</strong>: <code>string</code></p>
+</blockquote>
+<hr>
+<h3>onMultiSelect</h3>
+<blockquote>
+<p><strong>onMultiSelect</strong>: <code>object</code></p>
+</blockquote>
+
+<p>多选状态下的监事件</p>
+<h4>geometries</h4>
+<blockquote>
+<p><strong>geometries</strong>: <a href="IGeometryEvent.html"><code>IGeometryEvent</code></a>[]</p>
+</blockquote>
+<p>返回选中的对象数组</p>
+<hr>
+<h3>onSelect</h3>
+<blockquote>
+<p><strong>onSelect</strong>: <code>object</code></p>
+</blockquote>
+
+<p>选择状态下的监事件</p>
+<h4>event</h4>
+<blockquote>
+<p><strong>event</strong>: <a href="IClickEvent.html"><code>IClickEvent</code></a></p>
+</blockquote>
+<h4 class="strikethrough">feature?</h4>
+<blockquote>
+<p><code>optional</code> <strong>feature</strong>: <code>object</code></p>
+</blockquote>
+<p>若选中对象，则返回对象所在图层id及对象id
+若未选中对象，则返回 undefined</p>
+<h5>Deprecated</h5>
+<p>使用 geometries 字段获取选择结果</p>
+<h5>feature.featureId</h5>
+<blockquote>
+<p><strong>featureId</strong>: <code>number</code></p>
+</blockquote>
+<h5>feature.layerId</h5>
+<blockquote>
+<p><strong>layerId</strong>: <code>string</code></p>
+</blockquote>
+<h4>geometries</h4>
+<blockquote>
+<p><strong>geometries</strong>: <a href="IGeometryEvent.html"><code>IGeometryEvent</code></a>[]</p>
+</blockquote>
+<p>返回选中的对象数组</p>
+<hr>
+<h3>onSelectCancle</h3>
+<blockquote>
+<p><strong>onSelectCancle</strong>: <code>null</code></p>
+</blockquote>
+
+<p>选择状态下的监事件</p>
+<hr>
+<h3>onZoomEnd</h3>
+<blockquote>
+<p><strong>onZoomEnd</strong>: <code>object</code></p>
+</blockquote>
+
+<p>比例尺变化</p>
+<h4>scale</h4>
+<blockquote>
+<p><strong>scale</strong>: <code>number</code></p>
+</blockquote>
+<h4>zoom</h4>
+<blockquote>
+<p><strong>zoom</strong>: <code>number</code></p>
+</blockquote>
+
+
+</body>
+</html>

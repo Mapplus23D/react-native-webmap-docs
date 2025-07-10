@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-native-webmap开发文档开发文档</title>
+
+    <style type="text/css">
+
+      /* BODY
+      =============================================================================*/
+
+      html {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 20px;
+        border: 0;
+        overflow: auto;
+        height: calc(100vh - 40px);
+      }
+
+      body>*:first-child {
+        margin-top: 0 !important;
+      }
+
+      body>*:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      /* BLOCKS
+      =============================================================================*/
+
+      p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+      }
+
+      /* HEADERS
+      =============================================================================*/
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h6 {
+        color: #777;
+        font-size: 14px;
+      }
+
+      body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+        margin-top: 10px;
+      }
+
+      /* LINKS
+      =============================================================================*/
+
+      a {
+        color: #4183C4;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .strikethrough {
+          text-decoration: line-through;
+      }
+
+      /* LISTS
+      =============================================================================*/
+
+      ul, ol {
+        padding-left: 30px;
+      }
+
+      ul li > :first-child,
+      ol li > :first-child,
+      ul li ul:first-of-type,
+      ol li ol:first-of-type,
+      ul li ol:first-of-type,
+      ol li ul:first-of-type {
+        margin-top: 0px;
+      }
+
+      ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+      }
+
+      dl {
+        padding: 0;
+      }
+
+      dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+      }
+
+      dl dt:first-child {
+        padding: 0;
+      }
+
+      dl dt>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dt>:last-child {
+        margin-bottom: 0px;
+      }
+
+      dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+      }
+
+      dl dd>:first-child {
+        margin-top: 0px;
+      }
+
+      dl dd>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* CODE
+      =============================================================================*/
+
+      pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+      }
+
+      code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+      }
+
+      pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+      }
+
+      pre code, pre tt {
+        background-color: transparent;
+        border: none;
+      }
+
+      kbd {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: #DDDDDD;
+          background-image: linear-gradient(#F1F1F1, #DDDDDD);
+          background-repeat: repeat-x;
+          border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+          border-image: none;
+          border-radius: 2px 2px 2px 2px;
+          border-style: solid;
+          border-width: 1px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          line-height: 10px;
+          padding: 1px 4px;
+      }
+
+      /* QUOTES
+      =============================================================================*/
+
+      blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+      }
+
+      blockquote>:first-child {
+        margin-top: 0px;
+      }
+
+      blockquote>:last-child {
+        margin-bottom: 0px;
+      }
+
+      /* HORIZONTAL RULES
+      =============================================================================*/
+
+      hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+      }
+
+      /* TABLES
+      =============================================================================*/
+
+      table th {
+        font-weight: bold;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+      }
+
+      table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      /* IMAGES
+      =============================================================================*/
+
+      img {
+        max-width: 100%
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+
+<h1>Type Alias: IDatasources</h1>
+<blockquote>
+<p><strong>IDatasources</strong> = <code>object</code></p>
+</blockquote>
+
+<p>数据管理模块</p>
+<p>添加数据源，获取数据源</p>
+<p>添加数据对象，添加文本对象，管理对象属性，获取对象，删除对象</p>
+<h2>Properties</h2>
+<h3>add()</h3>
+<blockquote>
+<p><strong>add</strong>: (<code>param</code>) =&gt; <code>string</code> | <code>null</code></p>
+</blockquote>
+
+<p>添加数据源</p>
+<h4>Parameters</h4>
+<h5>param</h5>
+<p><a href="AddSourceParam.html"><code>AddSourceParam</code></a></p>
+<p>数据源对象</p>
+<h4>Returns</h4>
+<p><code>string</code> | <code>null</code></p>
+<p>添加的数据源id，失败返回 null</p>
+<hr>
+<h3>addFieldInfo()</h3>
+<blockquote>
+<p><strong>addFieldInfo</strong>: (<code>dsId</code>, <code>info</code>, <code>index?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>添加属性</p>
+<h4>Parameters</h4>
+<h5>dsId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>info</h5>
+<p><a href="../interfaces/IFieldInfo.html"><code>IFieldInfo</code></a></p>
+<p>添加的属性信息</p>
+<h5>index?</h5>
+<p><code>number</code></p>
+<p>添加的位置</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>addNew()</h3>
+<blockquote>
+<p><strong>addNew</strong>: (<code>sourceId</code>, <code>params</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>添加对象</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>params</h5>
+<p><a href="../interfaces/IGeoJSONFeature.html"><code>IGeoJSONFeature</code></a></p>
+<p>对象参数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>addText()</h3>
+<blockquote>
+<p><strong>addText</strong>: (<code>sourceId</code>, <code>text</code>) =&gt; <code>Promise</code>&lt;<code>number</code> | <code>undefined</code>&gt;</p>
+</blockquote>
+
+<p>添加文字</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>text</h5>
+<h6>position</h6>
+<p><a href="IPoint2D.html"><code>IPoint2D</code></a></p>
+<p>文本位置</p>
+<h6>textColor?</h6>
+<p><code>string</code></p>
+<p>文本颜色，默认#000</p>
+<h6>textSize?</h6>
+<p><code>number</code></p>
+<p>文本大小，默认16</p>
+<h6>value</h6>
+<p><code>string</code></p>
+<p>文本</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code> | <code>undefined</code>&gt;</p>
+<hr>
+<h3>deleteObjects()</h3>
+<blockquote>
+<p><strong>deleteObjects</strong>: (<code>sourceId</code>, <code>objectIds</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>删除对象</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>objectIds</h5>
+<p><code>number</code>[]</p>
+<p>要删除的对象id数组</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>getCurrentRecordId()</h3>
+<blockquote>
+<p><strong>getCurrentRecordId</strong>: (<code>sourceId</code>) =&gt; <code>Promise</code>&lt;<code>number</code> | <code>undefined</code>&gt;</p>
+</blockquote>
+
+<p>获取当前记录的对象的几何id</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code> | <code>undefined</code>&gt;</p>
+<hr>
+<h3>getFieldInfos()</h3>
+<blockquote>
+<p><strong>getFieldInfos</strong>: (<code>dsId</code>, <code>indexes?</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/IFieldInfo.html"><code>IFieldInfo</code></a>[]&gt;</p>
+</blockquote>
+
+<p>获取数据源字段信息</p>
+<h4>Parameters</h4>
+<h5>dsId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>indexes?</h5>
+<p><code>number</code>[]</p>
+<p>指定位置的属性</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/IFieldInfo.html"><code>IFieldInfo</code></a>[]&gt;</p>
+<hr>
+<h3>getFieldInfosCount()</h3>
+<blockquote>
+<p><strong>getFieldInfosCount</strong>: (<code>dsId</code>) =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+
+<p>获取数据源字段信息数量</p>
+<h4>Parameters</h4>
+<h5>dsId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<hr>
+<h3>getGeometry()</h3>
+<blockquote>
+<p><strong>getGeometry</strong>: (<code>sourceId</code>, <code>geoId</code>) =&gt; <code>Promise</code>&lt;<a href="../interfaces/IGeoJSONFeature.html"><code>IGeoJSONFeature</code></a> | <code>undefined</code>&gt;</p>
+</blockquote>
+
+<p>获取</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>geoId</h5>
+<p><code>number</code></p>
+<p>对象id</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/IGeoJSONFeature.html"><code>IGeoJSONFeature</code></a> | <code>undefined</code>&gt;</p>
+<hr>
+<h3>getRecordsetFieldValue()</h3>
+<blockquote>
+<p><strong>getRecordsetFieldValue</strong>: (<code>params</code>) =&gt; <code>Promise</code>&lt;<code>string</code> | <code>number</code> | <code>boolean</code> | <code>null</code> | <code>undefined</code>&gt;</p>
+</blockquote>
+
+<p>获取指定字段的值</p>
+<h4>Parameters</h4>
+<h5>params</h5>
+<p>{
+ourceId 数据源id
+geoId   对象id
+indexOrName 属性序号或者名称
+ }</p>
+<h6>geoId?</h6>
+<p><code>number</code></p>
+<h6>indexOrName</h6>
+<p><code>number</code> | <code>string</code></p>
+<h6>sourceId</h6>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>string</code> | <code>number</code> | <code>boolean</code> | <code>null</code> | <code>undefined</code>&gt;</p>
+<hr>
+<h3>getSource()</h3>
+<blockquote>
+<p><strong>getSource</strong>: (<code>id</code>) =&gt; <a href="../interfaces/IGeoJSONDatasource.html"><code>IGeoJSONDatasource</code></a> | <a href="../interfaces/IRasterTileDatasource.html"><code>IRasterTileDatasource</code></a> | <code>null</code></p>
+</blockquote>
+
+<p>添加数据源</p>
+<h4>Parameters</h4>
+<h5>id</h5>
+<p><code>string</code></p>
+<h4>Returns</h4>
+<p><a href="../interfaces/IGeoJSONDatasource.html"><code>IGeoJSONDatasource</code></a> | <a href="../interfaces/IRasterTileDatasource.html"><code>IRasterTileDatasource</code></a> | <code>null</code></p>
+<p>添加的数据源对象，失败返回 undefined</p>
+<hr>
+<h3>indexOfFieldInfo()</h3>
+<blockquote>
+<p><strong>indexOfFieldInfo</strong>: (<code>dsId</code>, <code>name</code>) =&gt; <code>Promise</code>&lt;<code>number</code>&gt;</p>
+</blockquote>
+
+<p>根据名称获取属性位置</p>
+<h4>Parameters</h4>
+<h5>dsId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>属性名称</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>number</code>&gt;</p>
+<p>性字段在改集合中的序号，没有在此集合中则返回 -1</p>
+<hr>
+<h3>moveFieldInfo()</h3>
+<blockquote>
+<p><strong>moveFieldInfo</strong>: (<code>dsId</code>, <code>name</code>, <code>before?</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>移动属性位置</p>
+<h4>Parameters</h4>
+<h5>dsId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>name</h5>
+<p><code>string</code></p>
+<p>添加的属性信息</p>
+<h5>before?</h5>
+<p><code>string</code></p>
+<p>添加到指定位置前</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>recordsetFromGeoJSON()</h3>
+<blockquote>
+<p><strong>recordsetFromGeoJSON</strong>: (<code>sourceId</code>, <code>geoJSON</code>, <code>replaceById</code>, <code>dbIdIgnore</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+
+<p>从 GeoJSON 对象中导入几何对象及其属性值</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>geoJSON</h5>
+<p><a href="IGeoJSONData.html"><code>IGeoJSONData</code></a></p>
+<h5>replaceById</h5>
+<p><code>boolean</code></p>
+<p>是否替换掉相同id的数据，默认true</p>
+<h5>dbIdIgnore</h5>
+<p><code>boolean</code></p>
+<p>是否忽略dbId 默认false， 默认false</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>recordsetToGeoJSON()</h3>
+<blockquote>
+<p><strong>recordsetToGeoJSON</strong>: (<code>sourceId</code>, <code>hasAttribute</code>, <code>count</code>) =&gt; <code>Promise</code>&lt;<a href="IGeoJSONData.html"><code>IGeoJSONData</code></a> | <code>undefined</code>&gt;</p>
+</blockquote>
+
+<p>从当前记录起，将 recordset 中指定数量的记录转出 GeoJSON 对象</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>hasAttribute</h5>
+<p><code>boolean</code></p>
+<p>导出时是否包含属性值</p>
+<h5>count</h5>
+<p><code>number</code></p>
+<p>导出的记录数</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<a href="IGeoJSONData.html"><code>IGeoJSONData</code></a> | <code>undefined</code>&gt;</p>
+<hr>
+<h3>removeFieldInfo()</h3>
+<blockquote>
+<p><strong>removeFieldInfo</strong>: (<code>dsId</code>, <code>nameOrIndex</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>删除指定属性</p>
+<h4>Parameters</h4>
+<h5>dsId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>nameOrIndex</h5>
+<p>属性的名称或位置</p>
+<p><code>string</code> | <code>number</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>setGeometry()</h3>
+<blockquote>
+<p><strong>setGeometry</strong>: (<code>sourceId</code>, <code>geo</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>设置当前记录的几何对象，覆盖原来的对象</p>
+<h4>Parameters</h4>
+<h5>sourceId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>geo</h5>
+<p><a href="../interfaces/IGeoJSONFeature.html"><code>IGeoJSONFeature</code></a></p>
+<p>当前对象</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<hr>
+<h3>setRecordsetFieldValue()</h3>
+<blockquote>
+<p><strong>setRecordsetFieldValue</strong>: (<code>params</code>) =&gt; <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+
+<p>设置当前对象的属性值</p>
+<h4>Parameters</h4>
+<h5>params</h5>
+<p>{
+ourceId 数据源id
+geoId    k对象id
+indexOrName 属性序号或者名称
+value 要设置的属性值
+ }</p>
+<h6>geoId?</h6>
+<p><code>number</code></p>
+<h6>indexOrName</h6>
+<p><code>number</code> | <code>string</code></p>
+<h6>sourceId</h6>
+<p><code>string</code></p>
+<h6>value</h6>
+<p><code>number</code> | <code>string</code> | <code>boolean</code> | <code>null</code></p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<hr>
+<h3>updateCaption()</h3>
+<blockquote>
+<p><strong>updateCaption</strong>: (<code>dsId</code>, <code>caption</code>, <code>index</code>) =&gt; <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+
+<p>更改caption</p>
+<h4>Parameters</h4>
+<h5>dsId</h5>
+<p><code>string</code></p>
+<p>数据源id</p>
+<h5>caption</h5>
+<p>标题</p>
+<p><code>string</code> | <code>undefined</code></p>
+<h5>index</h5>
+<p><code>number</code></p>
+<p>要更改的位置</p>
+<h4>Returns</h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+
+
+</body>
+</html>
