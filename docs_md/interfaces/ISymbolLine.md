@@ -6,7 +6,7 @@
 
 # Interface: ISymbolLine
 
-Defined in: index.d.ts:690
+Defined in: index.d.ts:702
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:690
 
 > **id**: `string`
 
-Defined in: index.d.ts:685
+Defined in: index.d.ts:697
 
 #### Inherited from
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:685
 
 > **name**: `string`
 
-Defined in: index.d.ts:684
+Defined in: index.d.ts:696
 
 #### Inherited from
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:684
 
 > `optional` **pattern**: [`LinePattern`](../type-aliases/LinePattern.md)
 
-Defined in: index.d.ts:692
+Defined in: index.d.ts:704
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: index.d.ts:692
 
 > **url**: `string`
 
-Defined in: index.d.ts:691
+Defined in: index.d.ts:703

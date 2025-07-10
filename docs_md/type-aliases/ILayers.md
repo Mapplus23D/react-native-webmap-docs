@@ -8,7 +8,7 @@
 
 > **ILayers** = `object`
 
-Defined in: index.d.ts:1525
+Defined in: index.d.ts:1537
 
 图层管理模块
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:1525
 
 > **add**: (`param`, `beforeId?`) => `string` \| `undefined`
 
-Defined in: index.d.ts:1542
+Defined in: index.d.ts:1554
 
 添加图层到根组图层组中
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:1542
 
 > **addToGroup**: (`param`, `groupId`, `beforeId?`) => `string` \| `undefined`
 
-Defined in: index.d.ts:1550
+Defined in: index.d.ts:1562
 
 添加到指定图层组中
 
@@ -82,7 +82,7 @@ Defined in: index.d.ts:1550
 
 > **changeLayerStyle**: (`id`, `style`) => `boolean`
 
-Defined in: index.d.ts:1627
+Defined in: index.d.ts:1639
 
 修改图层风格
 
@@ -110,7 +110,7 @@ Defined in: index.d.ts:1627
 
 > **changeTextStyle**: (`layerId`, `textIds`, `style`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1637
+Defined in: index.d.ts:1649
 
 修改文本风格
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:1637
 
 > **clearSelection**: (`layerId`) => `boolean`
 
-Defined in: index.d.ts:1656
+Defined in: index.d.ts:1668
 
 清空图层选择集
 
@@ -168,7 +168,7 @@ Defined in: index.d.ts:1656
 
 > **getLayer**: (`id`) => [`ILayer`](ILayer.md) \| `undefined`
 
-Defined in: index.d.ts:1535
+Defined in: index.d.ts:1547
 
 根据指定id获取图层信息
 
@@ -190,7 +190,7 @@ Defined in: index.d.ts:1535
 
 > **getLayers**: () => [`ILayer`](ILayer.md)[]
 
-Defined in: index.d.ts:1530
+Defined in: index.d.ts:1542
 
 根组图层组中的所有图层
 
@@ -204,7 +204,7 @@ Defined in: index.d.ts:1530
 
 > **getSelection**: (`layerId`, `ids?`) => `number`[]
 
-Defined in: index.d.ts:1650
+Defined in: index.d.ts:1662
 
 获取选择集
 
@@ -232,7 +232,7 @@ Defined in: index.d.ts:1650
 
 > **getStyle**: (`id`) => `undefined` \| [`IGeoStyle`](IGeoStyle.md)
 
-Defined in: index.d.ts:1620
+Defined in: index.d.ts:1632
 
 获取图层风格
 
@@ -256,7 +256,7 @@ Defined in: index.d.ts:1620
 
 > **getTheme**: (`id`) => `undefined` \| [`IThemeUnique`](../interfaces/IThemeUnique.md) \| [`IThemeRange`](../interfaces/IThemeRange.md) \| [`IThemeLabel`](../interfaces/IThemeLabel.md) \| [`IThemeLabelUnique`](../interfaces/IThemeLabelUnique.md) \| [`IThemeLabelRange`](../interfaces/IThemeLabelRange.md)
 
-Defined in: index.d.ts:1643
+Defined in: index.d.ts:1655
 
 获取专题图层的专题对象
 
@@ -280,7 +280,7 @@ Defined in: index.d.ts:1643
 
 > **move**: (`id`, `beforeId`) => `void`
 
-Defined in: index.d.ts:1557
+Defined in: index.d.ts:1569
 
 调整图层顺序
 
@@ -308,7 +308,7 @@ Defined in: index.d.ts:1557
 
 > **moveToGroup**: (`id`, `groupId`, `beforeId?`) => `void`
 
-Defined in: index.d.ts:1564
+Defined in: index.d.ts:1576
 
 移动图层到指定图层组内
 
@@ -342,7 +342,7 @@ Defined in: index.d.ts:1564
 
 > **refresh**: (`id`) => `void`
 
-Defined in: index.d.ts:1661
+Defined in: index.d.ts:1673
 
 刷新图层
 
@@ -362,7 +362,7 @@ Defined in: index.d.ts:1661
 
 > **remove**: (`id`) => `boolean`
 
-Defined in: index.d.ts:1570
+Defined in: index.d.ts:1582
 
 移除图层
 若是图层组，则会将图层组内所有图层一起移除
@@ -385,7 +385,7 @@ Defined in: index.d.ts:1570
 
 > **rename**: (`id`, `name`) => `void`
 
-Defined in: index.d.ts:1576
+Defined in: index.d.ts:1588
 
 重命名图层
 
@@ -413,7 +413,7 @@ Defined in: index.d.ts:1576
 
 > **setEditable**: (`id`, `editable`) => `void`
 
-Defined in: index.d.ts:1596
+Defined in: index.d.ts:1608
 
 设置图层可编辑
 
@@ -443,7 +443,7 @@ Defined in: index.d.ts:1596
 
 > **setMaxVisibleScale**: (`id`, `scale`) => `void`
 
-Defined in: index.d.ts:1602
+Defined in: index.d.ts:1614
 
 设置图层最大可见范围
 
@@ -471,7 +471,7 @@ Defined in: index.d.ts:1602
 
 > **setMetaData**: (`id`, `metadata`) => `void`
 
-Defined in: index.d.ts:1614
+Defined in: index.d.ts:1626
 
 设置图层自定义信息
 
@@ -499,7 +499,7 @@ Defined in: index.d.ts:1614
 
 > **setMinVisibleScale**: (`id`, `scale`) => `void`
 
-Defined in: index.d.ts:1608
+Defined in: index.d.ts:1620
 
 设置图层最小可见范围
 
@@ -527,7 +527,7 @@ Defined in: index.d.ts:1608
 
 > **setSelectable**: (`id`, `selectable`) => `void`
 
-Defined in: index.d.ts:1588
+Defined in: index.d.ts:1600
 
 设置图层可选
 
@@ -555,7 +555,7 @@ Defined in: index.d.ts:1588
 
 > **setVisible**: (`id`, `visible`) => `void`
 
-Defined in: index.d.ts:1582
+Defined in: index.d.ts:1594
 
 设置图层显隐
 

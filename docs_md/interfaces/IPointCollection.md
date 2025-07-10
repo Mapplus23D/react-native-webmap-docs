@@ -6,7 +6,7 @@
 
 # Interface: IPointCollection
 
-Defined in: index.d.ts:1067
+Defined in: index.d.ts:1079
 
 点对象数组
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1067
 
 > **geometries**: ([`IGeoJSONPoint`](IGeoJSONPoint.md) \| [`IGeoJSONMultiPoint`](IGeoJSONMultiPoint.md))[]
 
-Defined in: index.d.ts:1069
+Defined in: index.d.ts:1081
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:1069
 
 > **type**: `"GeometryCollection"`
 
-Defined in: index.d.ts:1068
+Defined in: index.d.ts:1080

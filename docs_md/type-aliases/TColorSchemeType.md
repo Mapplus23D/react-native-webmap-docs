@@ -8,4 +8,4 @@
 
 > **TColorSchemeType** = `"random"` \| `"gradient"`
 
-Defined in: index.d.ts:546
+Defined in: index.d.ts:558

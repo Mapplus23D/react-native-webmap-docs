@@ -6,7 +6,7 @@
 
 # Interface: ISymbolItem
 
-Defined in: index.d.ts:683
+Defined in: index.d.ts:695
 
 ## Extended by
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:683
 
 > **id**: `string`
 
-Defined in: index.d.ts:685
+Defined in: index.d.ts:697
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: index.d.ts:685
 
 > **name**: `string`
 
-Defined in: index.d.ts:684
+Defined in: index.d.ts:696

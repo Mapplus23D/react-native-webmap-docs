@@ -8,7 +8,7 @@
 
 > **GeoJSONImportResult** = ([`GeoJSONImportPoint`](../interfaces/GeoJSONImportPoint.md) \| [`GeoJSONImportLine`](../interfaces/GeoJSONImportLine.md) \| [`GeoJSONImportFill`](../interfaces/GeoJSONImportFill.md))[]
 
-Defined in: index.d.ts:1084
+Defined in: index.d.ts:1096
 
 GeoJSON 数据转换后的结果
 

@@ -6,7 +6,7 @@
 
 # Interface: IIServerRasterData
 
-Defined in: index.d.ts:218
+Defined in: index.d.ts:230
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:218
 
 > `optional` **height**: `number`
 
-Defined in: index.d.ts:224
+Defined in: index.d.ts:236
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:224
 
 > **provider**: `"iserver"`
 
-Defined in: index.d.ts:219
+Defined in: index.d.ts:231
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:219
 
 > **scheme**: `"xyz"` \| `"tileimage"`
 
-Defined in: index.d.ts:221
+Defined in: index.d.ts:233
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:221
 
 > `optional` **transparent**: `boolean`
 
-Defined in: index.d.ts:222
+Defined in: index.d.ts:234
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:222
 
 > **url**: `string`
 
-Defined in: index.d.ts:220
+Defined in: index.d.ts:232
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: index.d.ts:220
 
 > `optional` **width**: `number`
 
-Defined in: index.d.ts:223
+Defined in: index.d.ts:235

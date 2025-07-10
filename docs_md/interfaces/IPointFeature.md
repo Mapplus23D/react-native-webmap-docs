@@ -6,7 +6,7 @@
 
 # Interface: IPointFeature
 
-Defined in: index.d.ts:1055
+Defined in: index.d.ts:1067
 
 点对象 Feature
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1055
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:1062
+Defined in: index.d.ts:1074
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1062
 
 > **geometry**: [`IGeoJSONPoint`](IGeoJSONPoint.md) \| [`IGeoJSONMultiPoint`](IGeoJSONMultiPoint.md) \| [`IPointCollection`](IPointCollection.md)
 
-Defined in: index.d.ts:1057
+Defined in: index.d.ts:1069
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1057
 
 > **id**: `number`
 
-Defined in: index.d.ts:1061
+Defined in: index.d.ts:1073
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:1061
 
 > `optional` **properties**: `null` \| \{[`_`: `string`]: `null` \| `string` \| `number` \| `boolean`; \}
 
-Defined in: index.d.ts:1058
+Defined in: index.d.ts:1070
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: index.d.ts:1058
 
 > **type**: `"Feature"`
 
-Defined in: index.d.ts:1056
+Defined in: index.d.ts:1068

@@ -6,7 +6,7 @@
 
 # Interface: ExcelImportSucess
 
-Defined in: index.d.ts:1104
+Defined in: index.d.ts:1116
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1104
 
 > **data**: [`GeoJSONImportPoint`](GeoJSONImportPoint.md)
 
-Defined in: index.d.ts:1106
+Defined in: index.d.ts:1118
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:1106
 
 > **success**: `true`
 
-Defined in: index.d.ts:1105
+Defined in: index.d.ts:1117

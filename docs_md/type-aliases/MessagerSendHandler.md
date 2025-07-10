@@ -8,7 +8,7 @@
 
 > **MessagerSendHandler** = (`event`) => `void`
 
-Defined in: index.d.ts:984
+Defined in: index.d.ts:996
 
 发送消息实现接口
 

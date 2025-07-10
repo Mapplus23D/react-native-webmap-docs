@@ -8,4 +8,4 @@
 
 > **AddBaseLayerParam** = `Omit`\<[`ILayerImage`](../interfaces/ILayerImage.md), [`OmitLayerParam`](OmitLayerParam.md)\>
 
-Defined in: index.d.ts:758
+Defined in: index.d.ts:770

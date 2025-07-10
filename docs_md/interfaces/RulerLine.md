@@ -6,7 +6,7 @@
 
 # Interface: RulerLine
 
-Defined in: index.d.ts:726
+Defined in: index.d.ts:738
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:726
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:729
+Defined in: index.d.ts:741
 
 前景色 , 默认黑色
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:729
 
 > `optional` **expectedWidth**: `number`
 
-Defined in: index.d.ts:697
+Defined in: index.d.ts:709
 
 #### Inherited from
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:697
 
 > `optional` **midStrokeWidth**: `number`
 
-Defined in: index.d.ts:735
+Defined in: index.d.ts:747
 
 中线宽度，默认scaleStrokeWidth
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:735
 
 > **patternType**: `"ruler"`
 
-Defined in: index.d.ts:727
+Defined in: index.d.ts:739
 
 #### Overrides
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:727
 
 > `optional` **scaleSpan**: `number`
 
-Defined in: index.d.ts:731
+Defined in: index.d.ts:743
 
 刻度间距,默认8,最小2
 
@@ -72,6 +72,6 @@ Defined in: index.d.ts:731
 
 > `optional` **scaleStrokeWidth**: `number`
 
-Defined in: index.d.ts:733
+Defined in: index.d.ts:745
 
 刻度线宽度,默认0.1*scaleSpan,大于0.5*scaleSpan无效

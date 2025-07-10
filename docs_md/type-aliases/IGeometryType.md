@@ -8,4 +8,4 @@
 
 > **IGeometryType** = `"point"` \| `"line"` \| `"fill"` \| `"text"`
 
-Defined in: index.d.ts:832
+Defined in: index.d.ts:844

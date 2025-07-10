@@ -6,7 +6,7 @@
 
 # Interface: ILayerTheme
 
-Defined in: index.d.ts:630
+Defined in: index.d.ts:642
 
 ## Extends
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:630
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:847
+Defined in: index.d.ts:859
 
 数据库id
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:847
 
 > **editable**: `boolean`
 
-Defined in: index.d.ts:656
+Defined in: index.d.ts:668
 
 是否可编辑
 所有图层中只能同时有一个可编辑的图层
@@ -51,7 +51,7 @@ Defined in: index.d.ts:656
 
 > **geometryType**: [`IGeometryType`](../type-aliases/IGeometryType.md)
 
-Defined in: index.d.ts:643
+Defined in: index.d.ts:655
 
 数据源内几何对象类型
 
@@ -61,7 +61,7 @@ Defined in: index.d.ts:643
 
 > **id**: `string`
 
-Defined in: index.d.ts:843
+Defined in: index.d.ts:855
 
 图层id
 
@@ -75,7 +75,7 @@ Defined in: index.d.ts:843
 
 > **maxVisibleScale**: `number`
 
-Defined in: index.d.ts:855
+Defined in: index.d.ts:867
 
 最大可见比例尺
 
@@ -89,7 +89,7 @@ Defined in: index.d.ts:855
 
 > `optional` **metadata**: `unknown`
 
-Defined in: index.d.ts:863
+Defined in: index.d.ts:875
 
 自定义数据
 
@@ -103,7 +103,7 @@ Defined in: index.d.ts:863
 
 > **minVisibleScale**: `number`
 
-Defined in: index.d.ts:859
+Defined in: index.d.ts:871
 
 最小可见比例尺
 
@@ -117,7 +117,7 @@ Defined in: index.d.ts:859
 
 > **name**: `string`
 
-Defined in: index.d.ts:839
+Defined in: index.d.ts:851
 
 图层名
 
@@ -131,7 +131,7 @@ Defined in: index.d.ts:839
 
 > **selectable**: `boolean`
 
-Defined in: index.d.ts:651
+Defined in: index.d.ts:663
 
 是否可选
 
@@ -141,7 +141,7 @@ Defined in: index.d.ts:651
 
 > **selectionStyle**: `Partial`\<[`IGeoStyle`](../type-aliases/IGeoStyle.md)\>
 
-Defined in: index.d.ts:660
+Defined in: index.d.ts:672
 
 选择集风格
 
@@ -151,7 +151,7 @@ Defined in: index.d.ts:660
 
 > **sourceId**: `string`
 
-Defined in: index.d.ts:635
+Defined in: index.d.ts:647
 
 数据源id
 
@@ -161,7 +161,7 @@ Defined in: index.d.ts:635
 
 > `optional` **sourceLayer**: `string`
 
-Defined in: index.d.ts:639
+Defined in: index.d.ts:651
 
 指定mvt数据源中的 source layer
 
@@ -171,7 +171,7 @@ Defined in: index.d.ts:639
 
 > **theme**: [`IThemeLabel`](IThemeLabel.md) \| [`IThemeRange`](IThemeRange.md) \| [`IThemeLabelRange`](IThemeLabelRange.md) \| [`IThemeLabelUnique`](IThemeLabelUnique.md) \| [`IThemeUnique`](IThemeUnique.md)
 
-Defined in: index.d.ts:647
+Defined in: index.d.ts:659
 
 专题
 
@@ -181,7 +181,7 @@ Defined in: index.d.ts:647
 
 > **type**: `"theme"`
 
-Defined in: index.d.ts:631
+Defined in: index.d.ts:643
 
 #### Overrides
 
@@ -193,7 +193,7 @@ Defined in: index.d.ts:631
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:851
+Defined in: index.d.ts:863
 
 是否可见
 

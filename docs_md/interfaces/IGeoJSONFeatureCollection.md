@@ -6,7 +6,7 @@
 
 # Interface: IGeoJSONFeatureCollection
 
-Defined in: index.d.ts:43
+Defined in: index.d.ts:55
 
 Feature 对象集合
 
@@ -16,7 +16,7 @@ Feature 对象集合
 
 > **features**: [`IGeoJSONFeature`](IGeoJSONFeature.md)[]
 
-Defined in: index.d.ts:51
+Defined in: index.d.ts:63
 
 包含的 Feature 对象的集合
 
@@ -26,6 +26,6 @@ Defined in: index.d.ts:51
 
 > **type**: `"FeatureCollection"`
 
-Defined in: index.d.ts:47
+Defined in: index.d.ts:59
 
 Feature 对象集合类型

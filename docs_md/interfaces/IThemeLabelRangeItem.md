@@ -6,7 +6,7 @@
 
 # Interface: IThemeLabelRangeItem
 
-Defined in: index.d.ts:562
+Defined in: index.d.ts:574
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:562
 
 > **caption**: `string`
 
-Defined in: index.d.ts:565
+Defined in: index.d.ts:577
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:565
 
 > **end**: `number`
 
-Defined in: index.d.ts:564
+Defined in: index.d.ts:576
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:564
 
 > **start**: `number`
 
-Defined in: index.d.ts:563
+Defined in: index.d.ts:575
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:563
 
 > **style**: `Partial`\<[`ITextStyle`](ITextStyle.md)\>
 
-Defined in: index.d.ts:567
+Defined in: index.d.ts:579
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: index.d.ts:567
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:566
+Defined in: index.d.ts:578

@@ -6,7 +6,7 @@
 
 # Interface: LayerIndex
 
-Defined in: index.d.ts:865
+Defined in: index.d.ts:877
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:865
 
 > `optional` **children**: `LayerIndex`[]
 
-Defined in: index.d.ts:867
+Defined in: index.d.ts:879
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:867
 
 > **id**: `string`
 
-Defined in: index.d.ts:866
+Defined in: index.d.ts:878

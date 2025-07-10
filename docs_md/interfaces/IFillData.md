@@ -6,7 +6,7 @@
 
 # Interface: IFillData
 
-Defined in: index.d.ts:996
+Defined in: index.d.ts:1008
 
 面 GeoJSON 数据，几何对象中仅包含面数据
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:996
 
 > **features**: [`IFillFeature`](IFillFeature.md)[]
 
-Defined in: index.d.ts:998
+Defined in: index.d.ts:1010
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:998
 
 > **type**: `"FeatureCollection"`
 
-Defined in: index.d.ts:997
+Defined in: index.d.ts:1009

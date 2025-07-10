@@ -8,7 +8,7 @@
 
 > **IDataConverter** = `object`
 
-Defined in: index.d.ts:1262
+Defined in: index.d.ts:1274
 
 数据转换模块
 
@@ -20,7 +20,7 @@ json，shp，excel等数据转换为地图数据格式
 
 > **convertFillToPoint**: (`geoJson`) => [`IGeoJSONFeature`](../interfaces/IGeoJSONFeature.md)[]
 
-Defined in: index.d.ts:1289
+Defined in: index.d.ts:1301
 
 面数据转为点串
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:1289
 
 > **excelToData**: (`data`, `param`) => [`ExcelImportSucess`](../interfaces/ExcelImportSucess.md) \| [`ExccelImportFail`](../interfaces/ExccelImportFail.md)
 
-Defined in: index.d.ts:1284
+Defined in: index.d.ts:1296
 
 excel转GeoJson数据
 
@@ -64,7 +64,7 @@ excel转GeoJson数据
 
 > **GeoJSONtoData**: (`geojson`, `param?`) => [`GeoJSONImportResult`](GeoJSONImportResult.md)
 
-Defined in: index.d.ts:1269
+Defined in: index.d.ts:1281
 
 GeoJSON 转 点线面数据源数据
 
@@ -94,7 +94,7 @@ GeoJSON 对象
 
 > **readExcel**: (`content`, `param`) => [`ExcelData`](../interfaces/ExcelData.md) \| `undefined`
 
-Defined in: index.d.ts:1276
+Defined in: index.d.ts:1288
 
 读取excel文件内容，支持xls，xlsx，csv
 
@@ -126,7 +126,7 @@ excel内容数据
 
 > **shp2Geojson**(`src`): `Promise`\<[`IGeoJSONFeatureCollection`](../interfaces/IGeoJSONFeatureCollection.md)[]\>
 
-Defined in: index.d.ts:1295
+Defined in: index.d.ts:1307
 
 shp 转 geojson
 

@@ -6,7 +6,7 @@
 
 # Interface: IThemeLabelUnique
 
-Defined in: index.d.ts:611
+Defined in: index.d.ts:623
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:611
 
 > **defaultStyle**: `Partial`\<[`ITextStyle`](ITextStyle.md)\>
 
-Defined in: index.d.ts:615
+Defined in: index.d.ts:627
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:615
 
 > **items**: [`IThemeLabelUniqueItem`](IThemeLabelUniqueItem.md)[]
 
-Defined in: index.d.ts:616
+Defined in: index.d.ts:628
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:616
 
 > **labelExpression**: `string`
 
-Defined in: index.d.ts:613
+Defined in: index.d.ts:625
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:613
 
 > **type**: `"label_unique"`
 
-Defined in: index.d.ts:612
+Defined in: index.d.ts:624
 
 #### Overrides
 
@@ -54,4 +54,4 @@ Defined in: index.d.ts:612
 
 > **uniqueExpression**: `string`
 
-Defined in: index.d.ts:614
+Defined in: index.d.ts:626

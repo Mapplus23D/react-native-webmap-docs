@@ -6,7 +6,7 @@
 
 # Interface: LinePatternBase
 
-Defined in: index.d.ts:695
+Defined in: index.d.ts:707
 
 ## Extended by
 
@@ -21,7 +21,7 @@ Defined in: index.d.ts:695
 
 > `optional` **expectedWidth**: `number`
 
-Defined in: index.d.ts:697
+Defined in: index.d.ts:709
 
 ***
 
@@ -29,4 +29,4 @@ Defined in: index.d.ts:697
 
 > **patternType**: `string`
 
-Defined in: index.d.ts:696
+Defined in: index.d.ts:708

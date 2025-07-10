@@ -6,7 +6,7 @@
 
 # Interface: ExccelImportFail
 
-Defined in: index.d.ts:1108
+Defined in: index.d.ts:1120
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1108
 
 > **reason**: `string`
 
-Defined in: index.d.ts:1110
+Defined in: index.d.ts:1122
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:1110
 
 > **success**: `false`
 
-Defined in: index.d.ts:1109
+Defined in: index.d.ts:1121

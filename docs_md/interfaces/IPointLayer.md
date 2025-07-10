@@ -6,7 +6,7 @@
 
 # Interface: IPointLayer
 
-Defined in: index.d.ts:511
+Defined in: index.d.ts:523
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:511
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:847
+Defined in: index.d.ts:859
 
 数据库id
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:847
 
 > **editable**: `boolean`
 
-Defined in: index.d.ts:427
+Defined in: index.d.ts:439
 
 是否可编辑
 所有图层中只能同时有一个可编辑的图层
@@ -47,7 +47,7 @@ Defined in: index.d.ts:427
 
 > **geometryType**: `"point"`
 
-Defined in: index.d.ts:512
+Defined in: index.d.ts:524
 
 数据源内几何对象类型
 
@@ -61,7 +61,7 @@ Defined in: index.d.ts:512
 
 > **id**: `string`
 
-Defined in: index.d.ts:843
+Defined in: index.d.ts:855
 
 图层id
 
@@ -75,7 +75,7 @@ Defined in: index.d.ts:843
 
 > **maxVisibleScale**: `number`
 
-Defined in: index.d.ts:855
+Defined in: index.d.ts:867
 
 最大可见比例尺
 
@@ -89,7 +89,7 @@ Defined in: index.d.ts:855
 
 > `optional` **metadata**: `unknown`
 
-Defined in: index.d.ts:863
+Defined in: index.d.ts:875
 
 自定义数据
 
@@ -103,7 +103,7 @@ Defined in: index.d.ts:863
 
 > **minVisibleScale**: `number`
 
-Defined in: index.d.ts:859
+Defined in: index.d.ts:871
 
 最小可见比例尺
 
@@ -117,7 +117,7 @@ Defined in: index.d.ts:859
 
 > **name**: `string`
 
-Defined in: index.d.ts:839
+Defined in: index.d.ts:851
 
 图层名
 
@@ -131,7 +131,7 @@ Defined in: index.d.ts:839
 
 > **selectable**: `boolean`
 
-Defined in: index.d.ts:422
+Defined in: index.d.ts:434
 
 是否可选
 
@@ -145,7 +145,7 @@ Defined in: index.d.ts:422
 
 > **selectionStyle**: `Partial`\<[`IGeoStyle`](../type-aliases/IGeoStyle.md)\>
 
-Defined in: index.d.ts:431
+Defined in: index.d.ts:443
 
 选择集风格
 
@@ -159,7 +159,7 @@ Defined in: index.d.ts:431
 
 > **sourceId**: `string`
 
-Defined in: index.d.ts:406
+Defined in: index.d.ts:418
 
 数据源id
 
@@ -173,7 +173,7 @@ Defined in: index.d.ts:406
 
 > `optional` **sourceLayer**: `string`
 
-Defined in: index.d.ts:410
+Defined in: index.d.ts:422
 
 指定mvt数据源中的 source layer
 
@@ -187,7 +187,7 @@ Defined in: index.d.ts:410
 
 > **style**: `Partial`\<[`IPointStyle`](IPointStyle.md)\>
 
-Defined in: index.d.ts:513
+Defined in: index.d.ts:525
 
 风格
 
@@ -201,7 +201,7 @@ Defined in: index.d.ts:513
 
 > **type**: `"vector"`
 
-Defined in: index.d.ts:402
+Defined in: index.d.ts:414
 
 #### Inherited from
 
@@ -213,7 +213,7 @@ Defined in: index.d.ts:402
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:851
+Defined in: index.d.ts:863
 
 是否可见
 

@@ -6,7 +6,7 @@
 
 # Enumeration: TextAlign
 
-Defined in: index.d.ts:139
+Defined in: index.d.ts:151
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:139
 
 > **bottom**: `"bottom"`
 
-Defined in: index.d.ts:144
+Defined in: index.d.ts:156
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:144
 
 > **bottomLeft**: `"bottomLeft"`
 
-Defined in: index.d.ts:147
+Defined in: index.d.ts:159
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:147
 
 > **bottomRight**: `"bottomRight"`
 
-Defined in: index.d.ts:148
+Defined in: index.d.ts:160
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:148
 
 > **center**: `"center"`
 
-Defined in: index.d.ts:140
+Defined in: index.d.ts:152
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:140
 
 > **left**: `"left"`
 
-Defined in: index.d.ts:141
+Defined in: index.d.ts:153
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:141
 
 > **right**: `"right"`
 
-Defined in: index.d.ts:142
+Defined in: index.d.ts:154
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:142
 
 > **top**: `"top"`
 
-Defined in: index.d.ts:143
+Defined in: index.d.ts:155
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:143
 
 > **topLeft**: `"topLeft"`
 
-Defined in: index.d.ts:145
+Defined in: index.d.ts:157
 
 ***
 
@@ -78,4 +78,4 @@ Defined in: index.d.ts:145
 
 > **topRight**: `"topRight"`
 
-Defined in: index.d.ts:146
+Defined in: index.d.ts:158

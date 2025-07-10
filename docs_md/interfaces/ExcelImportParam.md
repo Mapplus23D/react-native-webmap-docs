@@ -6,7 +6,7 @@
 
 # Interface: ExcelImportParam
 
-Defined in: index.d.ts:1112
+Defined in: index.d.ts:1124
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1112
 
 > **type**: `"coordinate"`
 
-Defined in: index.d.ts:1114
+Defined in: index.d.ts:1126
 
 导入类型，目前只有按坐标导入
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1114
 
 > **x**: `string`
 
-Defined in: index.d.ts:1116
+Defined in: index.d.ts:1128
 
 x 坐标所在列的字段名
 
@@ -34,6 +34,6 @@ x 坐标所在列的字段名
 
 > **y**: `string`
 
-Defined in: index.d.ts:1118
+Defined in: index.d.ts:1130
 
 y 坐标所在列的字段名

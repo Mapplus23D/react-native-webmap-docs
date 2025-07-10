@@ -8,7 +8,7 @@
 
 > **IColor** = `string`
 
-Defined in: index.d.ts:909
+Defined in: index.d.ts:921
 
 颜色
 

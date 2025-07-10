@@ -6,7 +6,7 @@
 
 # Interface: IThemeLabelBase
 
-Defined in: index.d.ts:515
+Defined in: index.d.ts:527
 
 ## Extended by
 
@@ -20,4 +20,4 @@ Defined in: index.d.ts:515
 
 > **type**: `"label"` \| `"label_unique"` \| `"label_range"`
 
-Defined in: index.d.ts:516
+Defined in: index.d.ts:528

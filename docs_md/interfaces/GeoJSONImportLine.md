@@ -6,7 +6,7 @@
 
 # Interface: GeoJSONImportLine
 
-Defined in: index.d.ts:1090
+Defined in: index.d.ts:1102
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1090
 
 > **data**: [`ILineData`](ILineData.md)
 
-Defined in: index.d.ts:1092
+Defined in: index.d.ts:1104
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1092
 
 > **fieldInfos**: [`IFieldInfo`](IFieldInfo.md)[]
 
-Defined in: index.d.ts:1093
+Defined in: index.d.ts:1105
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1093
 
 > **type**: `"line"`
 
-Defined in: index.d.ts:1091
+Defined in: index.d.ts:1103

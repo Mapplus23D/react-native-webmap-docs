@@ -8,7 +8,7 @@
 
 > **IRasterTileProvider** = `object`
 
-Defined in: index.d.ts:1874
+Defined in: index.d.ts:1886
 
 栅格地图模块
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1874
 
 > **getBDAnnotation**: () => [`IBaiduRasterData`](../interfaces/IBaiduRasterData.md)
 
-Defined in: index.d.ts:1886
+Defined in: index.d.ts:1898
 
 获取百度标注服务信息
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:1886
 
 > **getBDSatellite**: () => [`IBaiduRasterData`](../interfaces/IBaiduRasterData.md)
 
-Defined in: index.d.ts:1884
+Defined in: index.d.ts:1896
 
 获取百度卫星影像服务信息
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:1884
 
 > **getBDVector**: () => [`IBaiduRasterData`](../interfaces/IBaiduRasterData.md)
 
-Defined in: index.d.ts:1882
+Defined in: index.d.ts:1894
 
 获取百度矢量服务信息
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1882
 
 > **getBingData**: (`key`, `style`) => `Promise`\<[`IRasterTileData`](IRasterTileData.md) \| `undefined`\>
 
-Defined in: index.d.ts:1876
+Defined in: index.d.ts:1888
 
 获取bing服务信息
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:1876
 
 > **getIServerTileimage**: (`url`, `tileSize?`, `transparent?`) => [`IIServerRasterData`](../interfaces/IIServerRasterData.md)
 
-Defined in: index.d.ts:1896
+Defined in: index.d.ts:1908
 
 获取 iserver 发布的 tileimage 格式的影像数据
 
@@ -118,7 +118,7 @@ iserver发布的地址，地址精确到地图一级
 
 > **getIServerXYZ**: (`url`, `transparent?`) => [`IIServerRasterData`](../interfaces/IIServerRasterData.md)
 
-Defined in: index.d.ts:1891
+Defined in: index.d.ts:1903
 
 获取 iserver 发布的 xyztileimage 格式的影像数据
 
@@ -144,7 +144,7 @@ iserver发布的地址，地址精确到地图一级
 
 > **getJl1**: (`mk`, `tk`) => [`IRasterTileData`](IRasterTileData.md)
 
-Defined in: index.d.ts:1878
+Defined in: index.d.ts:1890
 
 获取长光卫星吉林1号影像服务信息
 
@@ -168,7 +168,7 @@ Defined in: index.d.ts:1878
 
 > **getTianditu**: (`token`, `style`) => [`IRasterTileData`](IRasterTileData.md)
 
-Defined in: index.d.ts:1880
+Defined in: index.d.ts:1892
 
 获取天地图服务信息
 

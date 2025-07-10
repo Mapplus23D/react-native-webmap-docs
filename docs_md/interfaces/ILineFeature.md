@@ -6,7 +6,7 @@
 
 # Interface: ILineFeature
 
-Defined in: index.d.ts:1029
+Defined in: index.d.ts:1041
 
 线对象 Feature
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1029
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:1036
+Defined in: index.d.ts:1048
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1036
 
 > **geometry**: [`IGeoJSONLine`](IGeoJSONLine.md) \| [`IGeoJSONMultiLine`](IGeoJSONMultiLine.md) \| [`ILineCollection`](ILineCollection.md)
 
-Defined in: index.d.ts:1031
+Defined in: index.d.ts:1043
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1031
 
 > **id**: `number`
 
-Defined in: index.d.ts:1035
+Defined in: index.d.ts:1047
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:1035
 
 > `optional` **properties**: `null` \| \{[`_`: `string`]: `null` \| `string` \| `number` \| `boolean`; \}
 
-Defined in: index.d.ts:1032
+Defined in: index.d.ts:1044
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: index.d.ts:1032
 
 > **type**: `"Feature"`
 
-Defined in: index.d.ts:1030
+Defined in: index.d.ts:1042

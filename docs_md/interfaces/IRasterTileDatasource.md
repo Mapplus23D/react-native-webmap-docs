@@ -6,7 +6,7 @@
 
 # Interface: IRasterTileDatasource
 
-Defined in: index.d.ts:230
+Defined in: index.d.ts:242
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:230
 
 > **data**: [`IRasterTileData`](../type-aliases/IRasterTileData.md)
 
-Defined in: index.d.ts:232
+Defined in: index.d.ts:244
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:232
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:188
+Defined in: index.d.ts:200
 
 数据库id
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:188
 
 > **id**: `string`
 
-Defined in: index.d.ts:180
+Defined in: index.d.ts:192
 
 数据源id
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:180
 
 > **name**: `string`
 
-Defined in: index.d.ts:184
+Defined in: index.d.ts:196
 
 数据源名称
 
@@ -68,4 +68,4 @@ Defined in: index.d.ts:184
 
 > **type**: `"raster"`
 
-Defined in: index.d.ts:231
+Defined in: index.d.ts:243

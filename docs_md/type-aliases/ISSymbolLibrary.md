@@ -8,7 +8,7 @@
 
 > **ISSymbolLibrary** = `object`
 
-Defined in: index.d.ts:1903
+Defined in: index.d.ts:1915
 
 地图符号库模块
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:1903
 
 > **addFillSymbol**: (`name`, `url`) => `string`
 
-Defined in: index.d.ts:1949
+Defined in: index.d.ts:1961
 
 添加面符号
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:1949
 
 > **addLineSymbol**: (`name`, `url`, `pattern?`) => `string`
 
-Defined in: index.d.ts:1937
+Defined in: index.d.ts:1949
 
 添加线符号
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:1937
 
 > **addPointSymbol**: (`name`, `url`, `width`, `height`) => `string`
 
-Defined in: index.d.ts:1924
+Defined in: index.d.ts:1936
 
 添加点符号
 
@@ -128,7 +128,7 @@ Defined in: index.d.ts:1924
 
 > **getFillSymbol**: (`id`) => [`ISymbolFill`](../interfaces/ISymbolFill.md) \| `undefined`
 
-Defined in: index.d.ts:1954
+Defined in: index.d.ts:1966
 
 获取指定id的面符号
 
@@ -150,7 +150,7 @@ Defined in: index.d.ts:1954
 
 > **getFillSymbols**: () => [`ISymbolFill`](../interfaces/ISymbolFill.md)[]
 
-Defined in: index.d.ts:1915
+Defined in: index.d.ts:1927
 
 获取所有面符号
 
@@ -164,7 +164,7 @@ Defined in: index.d.ts:1915
 
 > **getLineSymbol**: (`id`) => [`ISymbolLine`](../interfaces/ISymbolLine.md) \| `undefined`
 
-Defined in: index.d.ts:1942
+Defined in: index.d.ts:1954
 
 获取指定id的线符号
 
@@ -186,7 +186,7 @@ Defined in: index.d.ts:1942
 
 > **getLineSymbols**: () => [`ISymbolLine`](../interfaces/ISymbolLine.md)[]
 
-Defined in: index.d.ts:1911
+Defined in: index.d.ts:1923
 
 获取所有线符号
 
@@ -200,7 +200,7 @@ Defined in: index.d.ts:1911
 
 > **getPointSymbol**: (`id`) => [`ISymbolPoint`](../interfaces/ISymbolPoint.md) \| `undefined`
 
-Defined in: index.d.ts:1929
+Defined in: index.d.ts:1941
 
 获取指定id的点符号
 
@@ -222,7 +222,7 @@ Defined in: index.d.ts:1929
 
 > **getPointSymbols**: () => [`ISymbolPoint`](../interfaces/ISymbolPoint.md)[]
 
-Defined in: index.d.ts:1907
+Defined in: index.d.ts:1919
 
 获取所有点符号
 

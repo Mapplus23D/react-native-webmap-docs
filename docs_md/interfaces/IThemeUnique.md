@@ -6,7 +6,7 @@
 
 # Interface: IThemeUnique
 
-Defined in: index.d.ts:624
+Defined in: index.d.ts:636
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:624
 
 > **defaultStyle**: `Partial`\<[`IGeoStyle`](../type-aliases/IGeoStyle.md)\>
 
-Defined in: index.d.ts:628
+Defined in: index.d.ts:640
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:628
 
 > **expression**: `string`
 
-Defined in: index.d.ts:626
+Defined in: index.d.ts:638
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:626
 
 > **items**: [`IThemeUniqueItem`](IThemeUniqueItem.md)[]
 
-Defined in: index.d.ts:627
+Defined in: index.d.ts:639
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:627
 
 > **type**: `"unique"`
 
-Defined in: index.d.ts:625
+Defined in: index.d.ts:637

@@ -7,6 +7,7 @@
 
 ## 主要接口
 
+- [createRNClient](functions/createRNClient.md)
 - [ClientModule](interfaces/ClientModule.md)
 - [IBaseLayers](type-aliases/IBaseLayers.md)
 - [IDatasources](type-aliases/IDatasources.md)
@@ -145,7 +146,3 @@
 - [TColorSchemeType](type-aliases/TColorSchemeType.md)
 - [TFieldType](type-aliases/TFieldType.md)
 - [TLayerType](type-aliases/TLayerType.md)
-
-## Functions
-
-- [createClient](functions/createClient.md)

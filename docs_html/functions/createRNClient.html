@@ -309,11 +309,17 @@
 <p><strong>createRNClient</strong>(<code>getWebview</code>): <a href="../type-aliases/Client.html"><code>Client</code></a></p>
 </blockquote>
 
+<p>创建client 对象</p>
+<p>调用 createRNClient 创建一个 react-native 端专用的 client 对象</p>
+<p>client 对象负责与 webview 中的 webmap sdk 进行通信</p>
+<p>client 对象可以进行初始化，添加监听，调用所有模块的接口，枚举类型</p>
 <h2>Parameters</h2>
 <h3>getWebview</h3>
 <p>() =&gt; <code>null</code> | <code>WebView</code>&lt;{ }&gt;</p>
+<p>可返回 webview 引用以便进行消息的发送</p>
 <h2>Returns</h2>
 <p><a href="../type-aliases/Client.html"><code>Client</code></a></p>
+<p>client 对象</p>
 
 
 </body>

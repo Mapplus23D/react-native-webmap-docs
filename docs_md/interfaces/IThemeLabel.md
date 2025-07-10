@@ -6,7 +6,7 @@
 
 # Interface: IThemeLabel
 
-Defined in: index.d.ts:518
+Defined in: index.d.ts:530
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:518
 
 > **expression**: `string`
 
-Defined in: index.d.ts:523
+Defined in: index.d.ts:535
 
 标签专题表达式
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:523
 
 > **type**: `"label"`
 
-Defined in: index.d.ts:519
+Defined in: index.d.ts:531
 
 #### Overrides
 
@@ -40,4 +40,4 @@ Defined in: index.d.ts:519
 
 > **uniformStyle**: `Partial`\<[`ITextStyle`](ITextStyle.md)\>
 
-Defined in: index.d.ts:524
+Defined in: index.d.ts:536

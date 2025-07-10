@@ -8,4 +8,4 @@
 
 > **Coordsys** = `"wgs84"` \| `"gcj02"` \| `"bd09"`
 
-Defined in: index.d.ts:313
+Defined in: index.d.ts:325

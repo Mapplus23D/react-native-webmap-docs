@@ -6,7 +6,7 @@
 
 # Interface: IPointData
 
-Defined in: index.d.ts:1048
+Defined in: index.d.ts:1060
 
 点 GeoJSON 数据，几何对象中仅包含点数据
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1048
 
 > **features**: [`IPointFeature`](IPointFeature.md)[]
 
-Defined in: index.d.ts:1050
+Defined in: index.d.ts:1062
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:1050
 
 > **type**: `"FeatureCollection"`
 
-Defined in: index.d.ts:1049
+Defined in: index.d.ts:1061

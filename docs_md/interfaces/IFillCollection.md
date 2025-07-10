@@ -6,7 +6,7 @@
 
 # Interface: IFillCollection
 
-Defined in: index.d.ts:1015
+Defined in: index.d.ts:1027
 
 面对象数组
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1015
 
 > **geometries**: ([`IGeoJSONPolygon`](IGeoJSONPolygon.md) \| [`IGeoJSONMultiPolygon`](IGeoJSONMultiPolygon.md))[]
 
-Defined in: index.d.ts:1017
+Defined in: index.d.ts:1029
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:1017
 
 > **type**: `"GeometryCollection"`
 
-Defined in: index.d.ts:1016
+Defined in: index.d.ts:1028

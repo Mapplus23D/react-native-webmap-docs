@@ -6,7 +6,7 @@
 
 # Interface: GeoJSONImportPoint
 
-Defined in: index.d.ts:1085
+Defined in: index.d.ts:1097
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1085
 
 > **data**: [`IPointData`](IPointData.md)
 
-Defined in: index.d.ts:1087
+Defined in: index.d.ts:1099
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1087
 
 > **fieldInfos**: [`IFieldInfo`](IFieldInfo.md)[]
 
-Defined in: index.d.ts:1088
+Defined in: index.d.ts:1100
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1088
 
 > **type**: `"point"`
 
-Defined in: index.d.ts:1086
+Defined in: index.d.ts:1098

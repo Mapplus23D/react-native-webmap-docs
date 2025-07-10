@@ -6,7 +6,7 @@
 
 # Interface: IPointStyle
 
-Defined in: index.d.ts:374
+Defined in: index.d.ts:386
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:374
 
 > **circleColor**: `string`
 
-Defined in: index.d.ts:382
+Defined in: index.d.ts:394
 
 点颜色
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:382
 
 > **circleOpacity**: `number`
 
-Defined in: index.d.ts:386
+Defined in: index.d.ts:398
 
 点不透明度。0 透明， 1 不透明
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:386
 
 > **circleOutlineColor**: `string`
 
-Defined in: index.d.ts:398
+Defined in: index.d.ts:410
 
 纯色点轮廓颜色,默认白色
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:398
 
 > **circleOutlineWidth**: `number`
 
-Defined in: index.d.ts:394
+Defined in: index.d.ts:406
 
 纯色轮廓宽度，单位像素，默认0px
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:394
 
 > **circleRadius**: `number`
 
-Defined in: index.d.ts:390
+Defined in: index.d.ts:402
 
 点大小，单位像素，默认5px
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:390
 
 > **circleSymbol**: `string`
 
-Defined in: index.d.ts:378
+Defined in: index.d.ts:390
 
 点符号id

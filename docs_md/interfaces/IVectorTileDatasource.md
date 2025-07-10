@@ -6,7 +6,7 @@
 
 # Interface: IVectorTileDatasource
 
-Defined in: index.d.ts:234
+Defined in: index.d.ts:246
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:234
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:188
+Defined in: index.d.ts:200
 
 数据库id
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:188
 
 > **fieldInfos**: [`IFieldInfo`](IFieldInfo.md)[]
 
-Defined in: index.d.ts:239
+Defined in: index.d.ts:251
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:239
 
 > **geometryType**: `"point"` \| `"line"` \| `"fill"`
 
-Defined in: index.d.ts:238
+Defined in: index.d.ts:250
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:238
 
 > **id**: `string`
 
-Defined in: index.d.ts:180
+Defined in: index.d.ts:192
 
 数据源id
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:180
 
 > **name**: `string`
 
-Defined in: index.d.ts:184
+Defined in: index.d.ts:196
 
 数据源名称
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:184
 
 > **readOnly**: `boolean`
 
-Defined in: index.d.ts:237
+Defined in: index.d.ts:249
 
 ***
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:237
 
 > **tiles**: `string`[]
 
-Defined in: index.d.ts:236
+Defined in: index.d.ts:248
 
 ***
 
@@ -92,4 +92,4 @@ Defined in: index.d.ts:236
 
 > **type**: `"vectorTile"`
 
-Defined in: index.d.ts:235
+Defined in: index.d.ts:247

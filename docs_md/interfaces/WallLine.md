@@ -6,7 +6,7 @@
 
 # Interface: WallLine
 
-Defined in: index.d.ts:717
+Defined in: index.d.ts:729
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:717
 
 > `optional` **cellWidth**: `number`
 
-Defined in: index.d.ts:722
+Defined in: index.d.ts:734
 
 单元宽度,默认5
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:722
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:720
+Defined in: index.d.ts:732
 
 前景色 , 默认蓝色
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:720
 
 > `optional` **expectedWidth**: `number`
 
-Defined in: index.d.ts:697
+Defined in: index.d.ts:709
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:697
 
 > **patternType**: `"wall"`
 
-Defined in: index.d.ts:718
+Defined in: index.d.ts:730
 
 #### Overrides
 
@@ -62,6 +62,6 @@ Defined in: index.d.ts:718
 
 > `optional` **strokeWidth**: `number`
 
-Defined in: index.d.ts:724
+Defined in: index.d.ts:736
 
 描边宽度，默认cellWidth*0.2

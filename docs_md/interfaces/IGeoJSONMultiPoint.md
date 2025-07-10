@@ -6,7 +6,7 @@
 
 # Interface: IGeoJSONMultiPoint
 
-Defined in: index.d.ts:77
+Defined in: index.d.ts:89
 
 GeoJSON 复合点对象
 
@@ -16,7 +16,7 @@ GeoJSON 复合点对象
 
 > **coordinates**: [`IGeoJSONPosition`](../type-aliases/IGeoJSONPosition.md)[]
 
-Defined in: index.d.ts:79
+Defined in: index.d.ts:91
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:79
 
 > **type**: `"MultiPoint"`
 
-Defined in: index.d.ts:78
+Defined in: index.d.ts:90

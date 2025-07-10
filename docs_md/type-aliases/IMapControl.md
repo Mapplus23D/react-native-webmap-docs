@@ -8,7 +8,7 @@
 
 > **IMapControl** = `object`
 
-Defined in: index.d.ts:1672
+Defined in: index.d.ts:1684
 
 地图控制组件
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1672
 
 > **addCallout**: (`name`, `options`) => `void`
 
-Defined in: index.d.ts:1850
+Defined in: index.d.ts:1862
 
 添加callout
 
@@ -52,7 +52,7 @@ callout参数
 
 > **addTouchPoint**: (`px`) => `void`
 
-Defined in: index.d.ts:1813
+Defined in: index.d.ts:1825
 
 在屏幕指定位置模拟一次点击
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:1813
 
 > **appointEditGeometry**: (`layerId`, `geoId`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1808
+Defined in: index.d.ts:1820
 
 指定编辑对象
 
@@ -106,7 +106,7 @@ Defined in: index.d.ts:1808
 
 > **baseLayers**: () => [`ILayerImage`](../interfaces/ILayerImage.md)[]
 
-Defined in: index.d.ts:1842
+Defined in: index.d.ts:1854
 
 底图管理对象
 
@@ -120,7 +120,7 @@ Defined in: index.d.ts:1842
 
 > **capture**: () => `string`
 
-Defined in: index.d.ts:1830
+Defined in: index.d.ts:1842
 
 截图
 
@@ -136,7 +136,7 @@ png 类型的 base64 字符串
 
 > **closeMap**: () => `void`
 
-Defined in: index.d.ts:1681
+Defined in: index.d.ts:1693
 
 关闭当前地图
 
@@ -150,7 +150,7 @@ Defined in: index.d.ts:1681
 
 > **datasources**: () => [`IDatasource`](IDatasource.md)[]
 
-Defined in: index.d.ts:1834
+Defined in: index.d.ts:1846
 
 数据源管理对象
 
@@ -164,7 +164,7 @@ Defined in: index.d.ts:1834
 
 > **flyTo**: (`param`) => `void`
 
-Defined in: index.d.ts:1769
+Defined in: index.d.ts:1781
 
 飞行到某一位置
 
@@ -196,7 +196,7 @@ Defined in: index.d.ts:1769
 
 > **getAction**: () => [`Action`](../enumerations/Action.md)
 
-Defined in: index.d.ts:1781
+Defined in: index.d.ts:1793
 
 获取当前地图操作状态
 
@@ -210,7 +210,7 @@ Defined in: index.d.ts:1781
 
 > **getBackgroundColor**: () => [`IColor`](IColor.md)
 
-Defined in: index.d.ts:1754
+Defined in: index.d.ts:1766
 
 获取地图底色
 
@@ -224,7 +224,7 @@ Defined in: index.d.ts:1754
 
 > **getCenter**: () => [`IPoint2D`](IPoint2D.md)
 
-Defined in: index.d.ts:1708
+Defined in: index.d.ts:1720
 
 获取当前地图中心点坐标
 
@@ -238,7 +238,7 @@ Defined in: index.d.ts:1708
 
 > **getDynamicProjection**: () => `boolean`
 
-Defined in: index.d.ts:1695
+Defined in: index.d.ts:1707
 
 获取是否开启动态投影
 
@@ -252,7 +252,7 @@ Defined in: index.d.ts:1695
 
 > **getMap**: () => [`IWebMap`](../interfaces/IWebMap.md)
 
-Defined in: index.d.ts:1691
+Defined in: index.d.ts:1703
 
 以JSON形式获取当前的地图
 
@@ -268,7 +268,7 @@ Defined in: index.d.ts:1691
 
 > **getMaxScale**: () => `number`
 
-Defined in: index.d.ts:1746
+Defined in: index.d.ts:1758
 
 获取当前地图最大比例尺
 
@@ -282,7 +282,7 @@ Defined in: index.d.ts:1746
 
 > **getMinScale**: () => `number`
 
-Defined in: index.d.ts:1738
+Defined in: index.d.ts:1750
 
 获取当前地图最小比例尺
 
@@ -296,7 +296,7 @@ Defined in: index.d.ts:1738
 
 > **getScale**: () => `number`
 
-Defined in: index.d.ts:1716
+Defined in: index.d.ts:1728
 
 获取当前地图的比例尺
 
@@ -310,7 +310,7 @@ Defined in: index.d.ts:1716
 
 > **getSelectOption**: () => [`SelectOption`](../interfaces/SelectOption.md)
 
-Defined in: index.d.ts:1789
+Defined in: index.d.ts:1801
 
 获取selctOption
 
@@ -324,7 +324,7 @@ Defined in: index.d.ts:1789
 
 > **getViewBounds**: () => `Rectangle2D`
 
-Defined in: index.d.ts:1734
+Defined in: index.d.ts:1746
 
 获取当前地图可见范围
 
@@ -338,7 +338,7 @@ Defined in: index.d.ts:1734
 
 > **layers**: () => [`ILayer`](ILayer.md)[]
 
-Defined in: index.d.ts:1838
+Defined in: index.d.ts:1850
 
 图层管理对象
 
@@ -352,7 +352,7 @@ Defined in: index.d.ts:1838
 
 > **mapToPx**: (`map`) => [`IPoint2D`](IPoint2D.md)
 
-Defined in: index.d.ts:1825
+Defined in: index.d.ts:1837
 
 地图经纬度点转屏幕像素点
 
@@ -376,7 +376,7 @@ Defined in: index.d.ts:1825
 
 > **openMap**: (`webmap`) => `void`
 
-Defined in: index.d.ts:1677
+Defined in: index.d.ts:1689
 
 打开地图
 
@@ -396,7 +396,7 @@ Defined in: index.d.ts:1677
 
 > **panTo**: (`center`, `duration`) => `void`
 
-Defined in: index.d.ts:1764
+Defined in: index.d.ts:1776
 
 平移到指定位置
 
@@ -424,7 +424,7 @@ Defined in: index.d.ts:1764
 
 > **pxToMap**: (`px`) => [`IPoint2D`](IPoint2D.md)
 
-Defined in: index.d.ts:1819
+Defined in: index.d.ts:1831
 
 像素点转地图经纬度点
 
@@ -448,7 +448,7 @@ Defined in: index.d.ts:1819
 
 > **refresh**: () => `void`
 
-Defined in: index.d.ts:1704
+Defined in: index.d.ts:1716
 
 刷新地图
 
@@ -462,7 +462,7 @@ Defined in: index.d.ts:1704
 
 > **removeAllCallouts**: () => `void`
 
-Defined in: index.d.ts:1865
+Defined in: index.d.ts:1877
 
 移除所有callout
 
@@ -476,7 +476,7 @@ Defined in: index.d.ts:1865
 
 > **removeCallout**: (`name`) => `void`
 
-Defined in: index.d.ts:1860
+Defined in: index.d.ts:1872
 
 移除指定callout
 
@@ -498,7 +498,7 @@ Defined in: index.d.ts:1860
 
 > **rename**: (`name`) => `void`
 
-Defined in: index.d.ts:1686
+Defined in: index.d.ts:1698
 
 重命名地图
 
@@ -520,7 +520,7 @@ Defined in: index.d.ts:1686
 
 > **setAction**: (`action`) => `void`
 
-Defined in: index.d.ts:1777
+Defined in: index.d.ts:1789
 
 设置地图操作状态
 
@@ -540,7 +540,7 @@ Defined in: index.d.ts:1777
 
 > **setBackgroundColor**: (`color?`) => `void`
 
-Defined in: index.d.ts:1758
+Defined in: index.d.ts:1770
 
 设置地图底色
 
@@ -560,7 +560,7 @@ Defined in: index.d.ts:1758
 
 > **setCenter**: (`center`) => `void`
 
-Defined in: index.d.ts:1712
+Defined in: index.d.ts:1724
 
 设置当前地图中心点坐标
 
@@ -580,7 +580,7 @@ Defined in: index.d.ts:1712
 
 > **setDynamicProjection**: (`enable`) => `void`
 
-Defined in: index.d.ts:1700
+Defined in: index.d.ts:1712
 
 设置开启动态投影
 
@@ -602,7 +602,7 @@ Defined in: index.d.ts:1700
 
 > **setMaxScale**: (`maxScale?`) => `void`
 
-Defined in: index.d.ts:1750
+Defined in: index.d.ts:1762
 
 设置当前地图最大比例尺
 
@@ -622,7 +622,7 @@ Defined in: index.d.ts:1750
 
 > **setMinScale**: (`minScale?`) => `void`
 
-Defined in: index.d.ts:1742
+Defined in: index.d.ts:1754
 
 设置当前地图最小比例尺
 
@@ -642,7 +642,7 @@ Defined in: index.d.ts:1742
 
 > **setPrjCoordsys**: (`type`) => `void`
 
-Defined in: index.d.ts:1725
+Defined in: index.d.ts:1737
 
 设置当前地图坐标系
 
@@ -664,7 +664,7 @@ Defined in: index.d.ts:1725
 
 > **setScale**: (`scale`) => `void`
 
-Defined in: index.d.ts:1720
+Defined in: index.d.ts:1732
 
 设置当前地图的比例尺
 
@@ -684,7 +684,7 @@ Defined in: index.d.ts:1720
 
 > **setSelectOption**: (`option`) => `void`
 
-Defined in: index.d.ts:1785
+Defined in: index.d.ts:1797
 
 设置selctOption
 
@@ -704,7 +704,7 @@ Defined in: index.d.ts:1785
 
 > **setViewBounds**: (`bounds`) => `void`
 
-Defined in: index.d.ts:1730
+Defined in: index.d.ts:1742
 
 设置当前地图可见范围
 
@@ -726,7 +726,7 @@ Defined in: index.d.ts:1730
 
 > **submit**: () => `void`
 
-Defined in: index.d.ts:1793
+Defined in: index.d.ts:1805
 
 - 在绘制模式，提交当前绘制对象
 
@@ -740,7 +740,7 @@ Defined in: index.d.ts:1793
 
 > **trash**: () => `void`
 
-Defined in: index.d.ts:1799
+Defined in: index.d.ts:1811
 
 - 在选择模式，删除当前选中的可编辑对象
 - 在绘制模式，删除当前绘制对象

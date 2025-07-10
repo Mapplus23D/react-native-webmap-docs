@@ -6,7 +6,7 @@
 
 # Interface: DatasourceBase
 
-Defined in: index.d.ts:176
+Defined in: index.d.ts:188
 
 ## Extended by
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:176
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:188
+Defined in: index.d.ts:200
 
 数据库id
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:188
 
 > **id**: `string`
 
-Defined in: index.d.ts:180
+Defined in: index.d.ts:192
 
 数据源id
 
@@ -40,6 +40,6 @@ Defined in: index.d.ts:180
 
 > **name**: `string`
 
-Defined in: index.d.ts:184
+Defined in: index.d.ts:196
 
 数据源名称

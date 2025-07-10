@@ -8,4 +8,4 @@
 
 > **IGeoStyle** = [`IPointStyle`](../interfaces/IPointStyle.md) & [`ILineStyle`](../interfaces/ILineStyle.md) & [`IFillStyle`](../interfaces/IFillStyle.md)
 
-Defined in: index.d.ts:400
+Defined in: index.d.ts:412

@@ -6,7 +6,7 @@
 
 # Interface: ClusterParam
 
-Defined in: index.d.ts:190
+Defined in: index.d.ts:202
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:190
 
 > **clusterMaxZoom**: `number`
 
-Defined in: index.d.ts:191
+Defined in: index.d.ts:203
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:191
 
 > **clusterRadius**: `number`
 
-Defined in: index.d.ts:192
+Defined in: index.d.ts:204

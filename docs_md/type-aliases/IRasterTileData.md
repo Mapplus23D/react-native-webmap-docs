@@ -8,4 +8,4 @@
 
 > **IRasterTileData** = [`INativeRasterData`](../interfaces/INativeRasterData.md) \| [`IIServerRasterData`](../interfaces/IIServerRasterData.md) \| [`IBaiduRasterData`](../interfaces/IBaiduRasterData.md)
 
-Defined in: index.d.ts:202
+Defined in: index.d.ts:214

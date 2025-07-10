@@ -8,7 +8,7 @@
 
 > **ICoordTrans** = `object`
 
-Defined in: index.d.ts:1248
+Defined in: index.d.ts:1260
 
 坐标转换
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:1248
 
 > **translateGeoJSON**: \<`T`\>(`feature`, `from`, `to`) => `T`
 
-Defined in: index.d.ts:1255
+Defined in: index.d.ts:1267
 
 geojson数据坐标转换
 

@@ -6,7 +6,7 @@
 
 # Interface: SelectOption
 
-Defined in: index.d.ts:295
+Defined in: index.d.ts:307
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:295
 
 > **accumulative**: `boolean`
 
-Defined in: index.d.ts:299
+Defined in: index.d.ts:311
 
 累加选择，默认false  ps.按shift时强制进入累加选择模式
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:299
 
 > **boxSelectEnable**: `boolean`
 
-Defined in: index.d.ts:297
+Defined in: index.d.ts:309
 
 是否支持框选手势，默认false
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:297
 
 > **boxUnselectWhenAccumulative**: `boolean`
 
-Defined in: index.d.ts:301
+Defined in: index.d.ts:313
 
 累加选择时是否通过框选取消选择状态，默认false
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:301
 
 > **cancleWhenClickNone**: `boolean`
 
-Defined in: index.d.ts:303
+Defined in: index.d.ts:315
 
 点击空白处取消选择，默认false  ps.单击鼠标右键强制取消选择
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:303
 
 > **featureDragEnable**: `boolean`
 
-Defined in: index.d.ts:305
+Defined in: index.d.ts:317
 
 允许拖动选中的可编辑对象，默认false
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:305
 
 > **featureTrashEnable**: `boolean`
 
-Defined in: index.d.ts:307
+Defined in: index.d.ts:319
 
 允许删除选中的可编辑对象，默认false

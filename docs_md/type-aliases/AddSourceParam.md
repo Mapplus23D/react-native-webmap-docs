@@ -8,6 +8,6 @@
 
 > **AddSourceParam** = `Omit`\<[`IGeoJSONDatasource`](../interfaces/IGeoJSONDatasource.md), `"id"` \| `"data"`\> & `object` \| `Omit`\<[`IRasterTileDatasource`](../interfaces/IRasterTileDatasource.md), `"id"`\> \| `Omit`\<[`IVectorTileDatasource`](../interfaces/IVectorTileDatasource.md), `"id"`\>
 
-Defined in: index.d.ts:829
+Defined in: index.d.ts:841
 
 数据源添加参数

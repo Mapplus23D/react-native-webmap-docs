@@ -6,7 +6,7 @@
 
 # Interface: ClientModule
 
-Defined in: index.d.ts:2077
+Defined in: index.d.ts:2089
 
 Client模块类
 
@@ -19,7 +19,7 @@ Client模块类
 
 > **baseLayers**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IBaseLayers`](../type-aliases/IBaseLayers.md)\>
 
-Defined in: index.d.ts:2079
+Defined in: index.d.ts:2091
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: index.d.ts:2079
 
 > **coordTrans**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`ICoordTrans`](../type-aliases/ICoordTrans.md)\>
 
-Defined in: index.d.ts:2085
+Defined in: index.d.ts:2097
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: index.d.ts:2085
 
 > **dataConverter**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IDataConverter`](../type-aliases/IDataConverter.md)\>
 
-Defined in: index.d.ts:2084
+Defined in: index.d.ts:2096
 
 ***
 
@@ -43,7 +43,7 @@ Defined in: index.d.ts:2084
 
 > **datasources**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IDatasources`](../type-aliases/IDatasources.md)\>
 
-Defined in: index.d.ts:2080
+Defined in: index.d.ts:2092
 
 ***
 
@@ -51,7 +51,7 @@ Defined in: index.d.ts:2080
 
 > **geometrist**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IGeometrist`](../type-aliases/IGeometrist.md)\>
 
-Defined in: index.d.ts:2086
+Defined in: index.d.ts:2098
 
 ***
 
@@ -59,7 +59,7 @@ Defined in: index.d.ts:2086
 
 > **layers**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`ILayers`](../type-aliases/ILayers.md)\>
 
-Defined in: index.d.ts:2081
+Defined in: index.d.ts:2093
 
 ***
 
@@ -67,7 +67,7 @@ Defined in: index.d.ts:2081
 
 > **mapControl**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IMapControl`](../type-aliases/IMapControl.md)\>
 
-Defined in: index.d.ts:2078
+Defined in: index.d.ts:2090
 
 ***
 
@@ -75,7 +75,7 @@ Defined in: index.d.ts:2078
 
 > **rasterTileProvider**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`IRasterTileProvider`](../type-aliases/IRasterTileProvider.md)\>
 
-Defined in: index.d.ts:2082
+Defined in: index.d.ts:2094
 
 ***
 
@@ -83,7 +83,7 @@ Defined in: index.d.ts:2082
 
 > **symbolLibrary**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`ISSymbolLibrary`](../type-aliases/ISSymbolLibrary.md)\>
 
-Defined in: index.d.ts:2083
+Defined in: index.d.ts:2095
 
 ***
 
@@ -91,4 +91,4 @@ Defined in: index.d.ts:2083
 
 > **theme**: [`AsyncFunction`](../type-aliases/AsyncFunction.md)\<[`ITheme`](../type-aliases/ITheme.md)\>
 
-Defined in: index.d.ts:2087
+Defined in: index.d.ts:2099

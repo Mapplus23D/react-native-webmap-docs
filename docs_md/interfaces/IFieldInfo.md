@@ -6,7 +6,7 @@
 
 # Interface: IFieldInfo
 
-Defined in: index.d.ts:111
+Defined in: index.d.ts:123
 
 属性字段信息
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:111
 
 > `optional` **caption**: `string`
 
-Defined in: index.d.ts:123
+Defined in: index.d.ts:135
 
 别名
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:123
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:127
+Defined in: index.d.ts:139
 
 数据库id
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:127
 
 > **name**: `string`
 
-Defined in: index.d.ts:115
+Defined in: index.d.ts:127
 
 字段名
 
@@ -46,6 +46,6 @@ Defined in: index.d.ts:115
 
 > **type**: [`TFieldType`](../type-aliases/TFieldType.md)
 
-Defined in: index.d.ts:119
+Defined in: index.d.ts:131
 
 字段类型

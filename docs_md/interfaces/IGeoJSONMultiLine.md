@@ -6,7 +6,7 @@
 
 # Interface: IGeoJSONMultiLine
 
-Defined in: index.d.ts:84
+Defined in: index.d.ts:96
 
 GeoJSON 复合线对象
 
@@ -16,7 +16,7 @@ GeoJSON 复合线对象
 
 > **coordinates**: [`IGeoJSONPosition`](../type-aliases/IGeoJSONPosition.md)[][]
 
-Defined in: index.d.ts:86
+Defined in: index.d.ts:98
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:86
 
 > **type**: `"MultiLineString"`
 
-Defined in: index.d.ts:85
+Defined in: index.d.ts:97

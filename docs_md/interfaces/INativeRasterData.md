@@ -6,7 +6,7 @@
 
 # Interface: INativeRasterData
 
-Defined in: index.d.ts:203
+Defined in: index.d.ts:215
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:203
 
 > `optional` **bounds**: \[`number`, `number`, `number`, `number`\]
 
-Defined in: index.d.ts:211
+Defined in: index.d.ts:223
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:211
 
 > `optional` **maxzoom**: `number`
 
-Defined in: index.d.ts:208
+Defined in: index.d.ts:220
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:208
 
 > `optional` **minzoom**: `number`
 
-Defined in: index.d.ts:207
+Defined in: index.d.ts:219
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:207
 
 > `optional` **provider**: `"native"`
 
-Defined in: index.d.ts:204
+Defined in: index.d.ts:216
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:204
 
 > `optional` **scheme**: `"xyz"` \| `"tms"`
 
-Defined in: index.d.ts:210
+Defined in: index.d.ts:222
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:210
 
 > `optional` **tiles**: `string`[]
 
-Defined in: index.d.ts:206
+Defined in: index.d.ts:218
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:206
 
 > `optional` **tileSize**: `number`
 
-Defined in: index.d.ts:209
+Defined in: index.d.ts:221
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: index.d.ts:209
 
 > `optional` **url**: `string`
 
-Defined in: index.d.ts:205
+Defined in: index.d.ts:217

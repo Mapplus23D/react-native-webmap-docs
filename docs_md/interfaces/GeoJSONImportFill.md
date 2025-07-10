@@ -6,7 +6,7 @@
 
 # Interface: GeoJSONImportFill
 
-Defined in: index.d.ts:1095
+Defined in: index.d.ts:1107
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1095
 
 > **data**: [`IFillData`](IFillData.md)
 
-Defined in: index.d.ts:1097
+Defined in: index.d.ts:1109
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1097
 
 > **fieldInfos**: [`IFieldInfo`](IFieldInfo.md)[]
 
-Defined in: index.d.ts:1098
+Defined in: index.d.ts:1110
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:1098
 
 > **type**: `"fill"`
 
-Defined in: index.d.ts:1096
+Defined in: index.d.ts:1108

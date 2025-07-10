@@ -6,7 +6,7 @@
 
 # Interface: IColorScheme
 
-Defined in: index.d.ts:526
+Defined in: index.d.ts:538
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:526
 
 > **colors**: `string`[]
 
-Defined in: index.d.ts:534
+Defined in: index.d.ts:546
 
 基础颜色数组
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:534
 
 > **intervalCount**: `number`
 
-Defined in: index.d.ts:544
+Defined in: index.d.ts:556
 
 变色插值间隔颜色数
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:544
 
 > **name**: `string`
 
-Defined in: index.d.ts:530
+Defined in: index.d.ts:542
 
 颜色方案名称
 
@@ -46,6 +46,6 @@ Defined in: index.d.ts:530
 
 > **type**: [`TColorSchemeType`](../type-aliases/TColorSchemeType.md)
 
-Defined in: index.d.ts:538
+Defined in: index.d.ts:550
 
 颜色插值生成方法，随机或渐变

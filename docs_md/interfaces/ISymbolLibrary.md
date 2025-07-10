@@ -6,7 +6,7 @@
 
 # Interface: ISymbolLibrary
 
-Defined in: index.d.ts:742
+Defined in: index.d.ts:754
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:742
 
 > **fill**: [`ISymbolFill`](ISymbolFill.md)[]
 
-Defined in: index.d.ts:745
+Defined in: index.d.ts:757
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:745
 
 > **line**: [`ISymbolLine`](ISymbolLine.md)[]
 
-Defined in: index.d.ts:744
+Defined in: index.d.ts:756
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:744
 
 > **point**: [`ISymbolPoint`](ISymbolPoint.md)[]
 
-Defined in: index.d.ts:743
+Defined in: index.d.ts:755

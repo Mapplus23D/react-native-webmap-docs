@@ -6,7 +6,7 @@
 
 # Interface: IGeoJSONGeometryCollection
 
-Defined in: index.d.ts:100
+Defined in: index.d.ts:112
 
 GeoJSON 几何对象集合
 
@@ -18,7 +18,7 @@ GeoJSON 几何对象集合
 
 > **geometries**: ([`IGeoJSONPoint`](IGeoJSONPoint.md) \| [`IGeoJSONLine`](IGeoJSONLine.md) \| [`IGeoJSONPolygon`](IGeoJSONPolygon.md) \| [`IGeoJSONMultiPoint`](IGeoJSONMultiPoint.md) \| [`IGeoJSONMultiLine`](IGeoJSONMultiLine.md) \| [`IGeoJSONMultiPolygon`](IGeoJSONMultiPolygon.md))[]
 
-Defined in: index.d.ts:102
+Defined in: index.d.ts:114
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: index.d.ts:102
 
 > **type**: `"GeometryCollection"`
 
-Defined in: index.d.ts:101
+Defined in: index.d.ts:113

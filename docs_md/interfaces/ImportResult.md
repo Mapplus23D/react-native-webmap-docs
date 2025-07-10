@@ -6,7 +6,7 @@
 
 # Interface: ImportResult
 
-Defined in: index.d.ts:2099
+Defined in: index.d.ts:2111
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:2099
 
 > **fieldInfos**: [`IFieldInfo`](IFieldInfo.md)[]
 
-Defined in: index.d.ts:2102
+Defined in: index.d.ts:2114
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:2102
 
 > **path**: `string`
 
-Defined in: index.d.ts:2101
+Defined in: index.d.ts:2113
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: index.d.ts:2101
 
 > **type**: `"point"` \| `"line"` \| `"fill"`
 
-Defined in: index.d.ts:2100
+Defined in: index.d.ts:2112

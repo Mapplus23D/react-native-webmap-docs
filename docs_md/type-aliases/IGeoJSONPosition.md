@@ -8,6 +8,6 @@
 
 > **IGeoJSONPosition** = `number`[]
 
-Defined in: index.d.ts:107
+Defined in: index.d.ts:119
 
 GeoJSON 数据中的坐标

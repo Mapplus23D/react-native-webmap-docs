@@ -6,7 +6,7 @@
 
 # Interface: DashedLine
 
-Defined in: index.d.ts:699
+Defined in: index.d.ts:711
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:699
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:702
+Defined in: index.d.ts:714
 
 实部色 , 默认蓝色
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:702
 
 > `optional` **dashArray**: `number`[]
 
-Defined in: index.d.ts:706
+Defined in: index.d.ts:718
 
 默认[12,4]
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:706
 
 > `optional` **expectedWidth**: `number`
 
-Defined in: index.d.ts:697
+Defined in: index.d.ts:709
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:697
 
 > `optional` **gapColor**: `string`
 
-Defined in: index.d.ts:704
+Defined in: index.d.ts:716
 
 虚部色 ，默认透明
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:704
 
 > **patternType**: `"dashed"`
 
-Defined in: index.d.ts:700
+Defined in: index.d.ts:712
 
 #### Overrides
 

@@ -6,7 +6,7 @@
 
 # Interface: ExcelData
 
-Defined in: index.d.ts:1100
+Defined in: index.d.ts:1112
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1100
 
 > **fieldInfos**: [`IFieldInfo`](IFieldInfo.md)[]
 
-Defined in: index.d.ts:1101
+Defined in: index.d.ts:1113
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:1101
 
 > **fieldValues**: (`null` \| `string` \| `number` \| `boolean`)[][]
 
-Defined in: index.d.ts:1102
+Defined in: index.d.ts:1114

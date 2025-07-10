@@ -6,7 +6,7 @@
 
 # Interface: ITextStyle
 
-Defined in: index.d.ts:150
+Defined in: index.d.ts:162
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:150
 
 > **textAlign**: [`TextAlign`](../enumerations/TextAlign.md)
 
-Defined in: index.d.ts:174
+Defined in: index.d.ts:186
 
 文本对齐方式
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:174
 
 > **textColor**: `string`
 
-Defined in: index.d.ts:162
+Defined in: index.d.ts:174
 
 文本颜色
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:162
 
 > **textHeight**: `number`
 
-Defined in: index.d.ts:158
+Defined in: index.d.ts:170
 
 行高
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:158
 
 > **textOpacity**: `number`
 
-Defined in: index.d.ts:166
+Defined in: index.d.ts:178
 
 文本不透明度
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:166
 
 > **textRotate**: `number`
 
-Defined in: index.d.ts:170
+Defined in: index.d.ts:182
 
 旋转角度
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:170
 
 > **textSize**: `number`
 
-Defined in: index.d.ts:154
+Defined in: index.d.ts:166
 
 字体大小 默认 16px

@@ -6,7 +6,7 @@
 
 # Interface: IGeoJSONPoint
 
-Defined in: index.d.ts:56
+Defined in: index.d.ts:68
 
 GeoJSON 点对象
 
@@ -16,7 +16,7 @@ GeoJSON 点对象
 
 > **coordinates**: [`IGeoJSONPosition`](../type-aliases/IGeoJSONPosition.md)
 
-Defined in: index.d.ts:58
+Defined in: index.d.ts:70
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:58
 
 > **type**: `"Point"`
 
-Defined in: index.d.ts:57
+Defined in: index.d.ts:69

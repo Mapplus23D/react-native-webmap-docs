@@ -8,7 +8,7 @@
 
 > **IGeometrist** = `object`
 
-Defined in: index.d.ts:1474
+Defined in: index.d.ts:1486
 
 对象分析
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:1474
 
 > **createCircle**: (`center`, `radius`, `pointCount`, `isPolygon`) => [`IGeoJSONLine`](../interfaces/IGeoJSONLine.md) \| [`IGeoJSONPolygon`](../interfaces/IGeoJSONPolygon.md)
 
-Defined in: index.d.ts:1518
+Defined in: index.d.ts:1530
 
 圆坐标计算
 
@@ -62,7 +62,7 @@ Defined in: index.d.ts:1518
 
 > **polygonErase**: (`erasedPolygon`, `srcPolygon`) => [`IGeoJSONFeature`](../interfaces/IGeoJSONFeature.md) \| `null`
 
-Defined in: index.d.ts:1509
+Defined in: index.d.ts:1521
 
 面擦除
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:1509
 
 > **polygonIntersect**: (`polygon1`, `polygon2`) => [`IGeoJSONFeature`](../interfaces/IGeoJSONFeature.md) \| `null`
 
-Defined in: index.d.ts:1495
+Defined in: index.d.ts:1507
 
 面相交
 
@@ -116,7 +116,7 @@ Defined in: index.d.ts:1495
 
 > **polygonUnion**: (`polygon1`, `polygon2`) => [`IGeoJSONFeature`](../interfaces/IGeoJSONFeature.md) \| `null`
 
-Defined in: index.d.ts:1502
+Defined in: index.d.ts:1514
 
 面合并
 
@@ -142,7 +142,7 @@ Defined in: index.d.ts:1502
 
 > **resample**: (`geometry`, `tolerance?`) => [`IGeoJSONFeature`](../interfaces/IGeoJSONFeature.md) \| `null`
 
-Defined in: index.d.ts:1481
+Defined in: index.d.ts:1493
 
 线重采样
 
@@ -172,7 +172,7 @@ Defined in: index.d.ts:1481
 
 > **smooth**: (`geometry`, `smoothness?`) => [`IGeoJSONFeature`](../interfaces/IGeoJSONFeature.md) \| `null`
 
-Defined in: index.d.ts:1488
+Defined in: index.d.ts:1500
 
 线光滑
 

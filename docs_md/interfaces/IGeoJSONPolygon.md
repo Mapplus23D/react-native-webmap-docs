@@ -6,7 +6,7 @@
 
 # Interface: IGeoJSONPolygon
 
-Defined in: index.d.ts:70
+Defined in: index.d.ts:82
 
 GeoJSON 面对象
 
@@ -16,7 +16,7 @@ GeoJSON 面对象
 
 > **coordinates**: [`IGeoJSONPosition`](../type-aliases/IGeoJSONPosition.md)[][]
 
-Defined in: index.d.ts:72
+Defined in: index.d.ts:84
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:72
 
 > **type**: `"Polygon"`
 
-Defined in: index.d.ts:71
+Defined in: index.d.ts:83

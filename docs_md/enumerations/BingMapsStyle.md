@@ -6,7 +6,7 @@
 
 # Enumeration: BingMapsStyle
 
-Defined in: index.d.ts:920
+Defined in: index.d.ts:932
 
 bing 地图服务类型常量
 
@@ -16,7 +16,7 @@ bing 地图服务类型常量
 
 > **AERIAL**: `"Aerial"`
 
-Defined in: index.d.ts:924
+Defined in: index.d.ts:936
 
 Aerial imagery.
 
@@ -26,7 +26,7 @@ Aerial imagery.
 
 > **AERIAL\_WITH\_LABELS**: `"AerialWithLabels"`
 
-Defined in: index.d.ts:928
+Defined in: index.d.ts:940
 
 Aerial imagery with a road overlay.
 
@@ -36,7 +36,7 @@ Aerial imagery with a road overlay.
 
 > **AERIAL\_WITH\_LABELS\_ON\_DEMAND**: `"AerialWithLabelsOnDemand"`
 
-Defined in: index.d.ts:932
+Defined in: index.d.ts:944
 
 Aerial imagery with a road overlay.
 
@@ -46,7 +46,7 @@ Aerial imagery with a road overlay.
 
 > **CANVAS\_DARK**: `"CanvasDark"`
 
-Defined in: index.d.ts:944
+Defined in: index.d.ts:956
 
 A dark version of the road maps.
 
@@ -56,7 +56,7 @@ A dark version of the road maps.
 
 > **CANVAS\_GRAY**: `"CanvasGray"`
 
-Defined in: index.d.ts:952
+Defined in: index.d.ts:964
 
 A grayscale version of the road maps.
 
@@ -66,7 +66,7 @@ A grayscale version of the road maps.
 
 > **CANVAS\_LIGHT**: `"CanvasLight"`
 
-Defined in: index.d.ts:948
+Defined in: index.d.ts:960
 
 A lighter version of the road maps.
 
@@ -76,7 +76,7 @@ A lighter version of the road maps.
 
 > **COLLINS\_BART**: `"CollinsBart"`
 
-Defined in: index.d.ts:960
+Defined in: index.d.ts:972
 
 Collins Bart imagery.
 
@@ -86,7 +86,7 @@ Collins Bart imagery.
 
 > **ORDNANCE\_SURVEY**: `"OrdnanceSurvey"`
 
-Defined in: index.d.ts:956
+Defined in: index.d.ts:968
 
 Ordnance Survey imagery. This imagery is visible only for the London, UK area.
 
@@ -96,7 +96,7 @@ Ordnance Survey imagery. This imagery is visible only for the London, UK area.
 
 > **ROAD**: `"Road"`
 
-Defined in: index.d.ts:936
+Defined in: index.d.ts:948
 
 Roads without additional imagery.
 
@@ -106,6 +106,6 @@ Roads without additional imagery.
 
 > **ROAD\_ON\_DEMAND**: `"RoadOnDemand"`
 
-Defined in: index.d.ts:940
+Defined in: index.d.ts:952
 
 Roads without additional imagery.

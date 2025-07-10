@@ -6,7 +6,7 @@
 
 # Interface: ILineStyle
 
-Defined in: index.d.ts:356
+Defined in: index.d.ts:368
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:356
 
 > **lineColor**: `string`
 
-Defined in: index.d.ts:364
+Defined in: index.d.ts:376
 
 线颜色
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:364
 
 > **lineOpacity**: `number`
 
-Defined in: index.d.ts:368
+Defined in: index.d.ts:380
 
 线不透明度。0 透明， 1 不透明
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:368
 
 > **lineSymbol**: `string`
 
-Defined in: index.d.ts:360
+Defined in: index.d.ts:372
 
 线符号id
 
@@ -44,6 +44,6 @@ Defined in: index.d.ts:360
 
 > **lineWidth**: `number`
 
-Defined in: index.d.ts:372
+Defined in: index.d.ts:384
 
 线宽。默认 1px

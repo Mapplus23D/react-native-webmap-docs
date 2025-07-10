@@ -8,4 +8,4 @@
 
 > **OmitLayerParam** = `"id"` \| `"visible"` \| `"maxVisibleScale"` \| `"minVisibleScale"` \| `"selectable"` \| `"editable"` \| `"style"` \| `"selectionStyle"`
 
-Defined in: index.d.ts:747
+Defined in: index.d.ts:759

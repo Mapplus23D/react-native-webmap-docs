@@ -6,7 +6,7 @@
 
 # Interface: ISymbolFill
 
-Defined in: index.d.ts:687
+Defined in: index.d.ts:699
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:687
 
 > **id**: `string`
 
-Defined in: index.d.ts:685
+Defined in: index.d.ts:697
 
 #### Inherited from
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:685
 
 > **name**: `string`
 
-Defined in: index.d.ts:684
+Defined in: index.d.ts:696
 
 #### Inherited from
 
@@ -42,4 +42,4 @@ Defined in: index.d.ts:684
 
 > **url**: `string`
 
-Defined in: index.d.ts:688
+Defined in: index.d.ts:700

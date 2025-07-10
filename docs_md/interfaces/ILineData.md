@@ -6,7 +6,7 @@
 
 # Interface: ILineData
 
-Defined in: index.d.ts:1022
+Defined in: index.d.ts:1034
 
 线 GeoJSON 数据，几何对象中仅包含线数据
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1022
 
 > **features**: [`ILineFeature`](ILineFeature.md)[]
 
-Defined in: index.d.ts:1024
+Defined in: index.d.ts:1036
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:1024
 
 > **type**: `"FeatureCollection"`
 
-Defined in: index.d.ts:1023
+Defined in: index.d.ts:1035

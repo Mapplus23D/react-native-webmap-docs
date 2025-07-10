@@ -8,4 +8,4 @@
 
 > **TLayerType** = `"vector"` \| `"text"` \| `"theme"` \| `"group"` \| `"image"` \| `"cluster"`
 
-Defined in: index.d.ts:833
+Defined in: index.d.ts:845

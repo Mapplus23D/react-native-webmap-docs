@@ -6,7 +6,7 @@
 
 # Interface: IThemeLabelUniqueItem
 
-Defined in: index.d.ts:605
+Defined in: index.d.ts:617
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:605
 
 > **caption**: `string`
 
-Defined in: index.d.ts:607
+Defined in: index.d.ts:619
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:607
 
 > **style**: `Partial`\<[`ITextStyle`](ITextStyle.md)\>
 
-Defined in: index.d.ts:609
+Defined in: index.d.ts:621
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:609
 
 > **value**: `string` \| `number` \| `boolean`
 
-Defined in: index.d.ts:606
+Defined in: index.d.ts:618
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: index.d.ts:606
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:608
+Defined in: index.d.ts:620

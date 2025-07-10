@@ -8,7 +8,7 @@
 
 > **IBaseLayers** = `object`
 
-Defined in: index.d.ts:1209
+Defined in: index.d.ts:1221
 
 底图模块
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:1209
 
 > **add**: (`param`, `beforeId?`) => `string`
 
-Defined in: index.d.ts:1220
+Defined in: index.d.ts:1232
 
 添加底图
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:1220
 
 > **getBaseLayers**: () => [`ILayerImage`](../interfaces/ILayerImage.md)[]
 
-Defined in: index.d.ts:1213
+Defined in: index.d.ts:1225
 
 获取当前地图的底图图层列表
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:1213
 
 > **move**: (`id`, `beforeId?`) => `void`
 
-Defined in: index.d.ts:1226
+Defined in: index.d.ts:1238
 
 调整底图顺序
 
@@ -92,7 +92,7 @@ Defined in: index.d.ts:1226
 
 > **remove**: (`id`) => `void`
 
-Defined in: index.d.ts:1231
+Defined in: index.d.ts:1243
 
 移除底图
 
@@ -114,7 +114,7 @@ Defined in: index.d.ts:1231
 
 > **rename**: (`id`, `name`) => `void`
 
-Defined in: index.d.ts:1237
+Defined in: index.d.ts:1249
 
 重命名底图
 
@@ -142,7 +142,7 @@ Defined in: index.d.ts:1237
 
 > **setVisible**: (`id`, `visible`) => `void`
 
-Defined in: index.d.ts:1243
+Defined in: index.d.ts:1255
 
 设置图层显隐
 

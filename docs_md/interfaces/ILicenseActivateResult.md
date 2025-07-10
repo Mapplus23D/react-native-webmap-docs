@@ -6,7 +6,7 @@
 
 # Interface: ILicenseActivateResult
 
-Defined in: index.d.ts:2095
+Defined in: index.d.ts:2107
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:2095
 
 > **message**: `string`
 
-Defined in: index.d.ts:2097
+Defined in: index.d.ts:2109
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:2097
 
 > **success**: `boolean`
 
-Defined in: index.d.ts:2096
+Defined in: index.d.ts:2108

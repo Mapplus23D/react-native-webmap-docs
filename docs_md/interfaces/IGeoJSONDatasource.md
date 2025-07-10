@@ -6,7 +6,7 @@
 
 # Interface: IGeoJSONDatasource
 
-Defined in: index.d.ts:194
+Defined in: index.d.ts:206
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:194
 
 > `optional` **cluster**: `boolean`
 
-Defined in: index.d.ts:199
+Defined in: index.d.ts:211
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:199
 
 > `optional` **clusterParam**: [`ClusterParam`](ClusterParam.md)
 
-Defined in: index.d.ts:200
+Defined in: index.d.ts:212
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:200
 
 > **data**: [`IGeoJSONFeatureCollection`](IGeoJSONFeatureCollection.md)
 
-Defined in: index.d.ts:196
+Defined in: index.d.ts:208
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:196
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:188
+Defined in: index.d.ts:200
 
 数据库id
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:188
 
 > **fieldInfos**: [`IFieldInfo`](IFieldInfo.md)[]
 
-Defined in: index.d.ts:197
+Defined in: index.d.ts:209
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:197
 
 > **geometryType**: [`IGeometryType`](../type-aliases/IGeometryType.md)
 
-Defined in: index.d.ts:198
+Defined in: index.d.ts:210
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:198
 
 > **id**: `string`
 
-Defined in: index.d.ts:180
+Defined in: index.d.ts:192
 
 数据源id
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:180
 
 > **name**: `string`
 
-Defined in: index.d.ts:184
+Defined in: index.d.ts:196
 
 数据源名称
 
@@ -100,4 +100,4 @@ Defined in: index.d.ts:184
 
 > **type**: `"geojson"`
 
-Defined in: index.d.ts:195
+Defined in: index.d.ts:207

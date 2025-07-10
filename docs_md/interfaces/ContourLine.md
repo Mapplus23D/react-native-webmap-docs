@@ -6,7 +6,7 @@
 
 # Interface: ContourLine
 
-Defined in: index.d.ts:708
+Defined in: index.d.ts:720
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:708
 
 > `optional` **color**: `string`
 
-Defined in: index.d.ts:711
+Defined in: index.d.ts:723
 
 中间颜色 , 默认透明
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:711
 
 > `optional` **expectedWidth**: `number`
 
-Defined in: index.d.ts:697
+Defined in: index.d.ts:709
 
 #### Inherited from
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:697
 
 > `optional` **outlineColor**: `string`
 
-Defined in: index.d.ts:713
+Defined in: index.d.ts:725
 
 轮廓颜色 ，默认蓝色
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:713
 
 > `optional` **outlineRatio**: `number`
 
-Defined in: index.d.ts:715
+Defined in: index.d.ts:727
 
 默认0.5 取值范围(0,1)
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:715
 
 > **patternType**: `"contour"`
 
-Defined in: index.d.ts:709
+Defined in: index.d.ts:721
 
 #### Overrides
 

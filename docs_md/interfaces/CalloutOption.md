@@ -6,7 +6,7 @@
 
 # Interface: CalloutOption
 
-Defined in: index.d.ts:794
+Defined in: index.d.ts:806
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:794
 
 > `optional` **anchor**: [`Anchor`](../type-aliases/Anchor.md)
 
-Defined in: index.d.ts:800
+Defined in: index.d.ts:812
 
 callout 锚点
 
@@ -26,7 +26,7 @@ callout 锚点
 
 > `optional` **className**: `string`
 
-Defined in: index.d.ts:816
+Defined in: index.d.ts:828
 
 CSS 类名
 
@@ -36,7 +36,7 @@ CSS 类名
 
 > `optional` **closeButton**: `boolean`
 
-Defined in: index.d.ts:806
+Defined in: index.d.ts:818
 
 是否显示关闭按钮
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:806
 
 > `optional` **closeOnClick**: `boolean`
 
-Defined in: index.d.ts:812
+Defined in: index.d.ts:824
 
 点击地图其他地方时是否自动关闭
 
@@ -60,6 +60,6 @@ Defined in: index.d.ts:812
 
 > `optional` **offset**: \[`number`, `number`\]
 
-Defined in: index.d.ts:820
+Defined in: index.d.ts:832
 
 像素偏移量

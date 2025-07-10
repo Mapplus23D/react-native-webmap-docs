@@ -8,7 +8,7 @@
 
 > **IPoint2D** = `object`
 
-Defined in: index.d.ts:910
+Defined in: index.d.ts:922
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:910
 
 > **x**: `number`
 
-Defined in: index.d.ts:911
+Defined in: index.d.ts:923
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:911
 
 > **y**: `number`
 
-Defined in: index.d.ts:912
+Defined in: index.d.ts:924

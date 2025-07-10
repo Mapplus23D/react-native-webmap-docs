@@ -6,7 +6,7 @@
 
 # Interface: IFillFeature
 
-Defined in: index.d.ts:1003
+Defined in: index.d.ts:1015
 
 面对象 Feature
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1003
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:1010
+Defined in: index.d.ts:1022
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:1010
 
 > **geometry**: [`IGeoJSONPolygon`](IGeoJSONPolygon.md) \| [`IGeoJSONMultiPolygon`](IGeoJSONMultiPolygon.md) \| [`IFillCollection`](IFillCollection.md)
 
-Defined in: index.d.ts:1005
+Defined in: index.d.ts:1017
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:1005
 
 > **id**: `number`
 
-Defined in: index.d.ts:1009
+Defined in: index.d.ts:1021
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:1009
 
 > `optional` **properties**: `null` \| \{[`_`: `string`]: `null` \| `string` \| `number` \| `boolean`; \}
 
-Defined in: index.d.ts:1006
+Defined in: index.d.ts:1018
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: index.d.ts:1006
 
 > **type**: `"Feature"`
 
-Defined in: index.d.ts:1004
+Defined in: index.d.ts:1016

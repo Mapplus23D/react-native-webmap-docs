@@ -6,7 +6,7 @@
 
 # Enumeration: RangeMode
 
-Defined in: index.d.ts:576
+Defined in: index.d.ts:588
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:576
 
 > **CUSTOMINTERVAL**: `"CUSTOMINTERVAL"`
 
-Defined in: index.d.ts:588
+Defined in: index.d.ts:600
 
 自定义距离分段。
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:588
 
 > **EQUALINTERVAL**: `"EQUALINTERVAL"`
 
-Defined in: index.d.ts:580
+Defined in: index.d.ts:592
 
 等距离分段。
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:580
 
 > **LOGARITHM**: `"LOGARITHM"`
 
-Defined in: index.d.ts:584
+Defined in: index.d.ts:596
 
 对数分段。
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:584
 
 > **NONE**: `"NONE"`
 
-Defined in: index.d.ts:578
+Defined in: index.d.ts:590
 
 空分段模式。
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:578
 
 > **SQUAREROOT**: `"SQUAREROOT"`
 
-Defined in: index.d.ts:582
+Defined in: index.d.ts:594
 
 平方根分段。
 
@@ -64,6 +64,6 @@ Defined in: index.d.ts:582
 
 > **STDDEVIATION**: `"STDDEVIATION"`
 
-Defined in: index.d.ts:586
+Defined in: index.d.ts:598
 
 标准差分段。

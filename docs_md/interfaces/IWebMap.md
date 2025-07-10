@@ -6,7 +6,7 @@
 
 # Interface: IWebMap
 
-Defined in: index.d.ts:870
+Defined in: index.d.ts:882
 
 webmap 地图结构
 
@@ -16,7 +16,7 @@ webmap 地图结构
 
 > `optional` **backgroundColor**: `string`
 
-Defined in: index.d.ts:895
+Defined in: index.d.ts:907
 
 底色
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:895
 
 > **baseLayers**: [`ILayerImage`](ILayerImage.md)[]
 
-Defined in: index.d.ts:885
+Defined in: index.d.ts:897
 
 底图
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:885
 
 > **center**: `number`[]
 
-Defined in: index.d.ts:879
+Defined in: index.d.ts:891
 
 地图中心点
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:879
 
 > **crs**: [`Coordsys`](../type-aliases/Coordsys.md)
 
-Defined in: index.d.ts:883
+Defined in: index.d.ts:895
 
 坐标系
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:883
 
 > **datasources**: [`IDatasource`](../type-aliases/IDatasource.md)[]
 
-Defined in: index.d.ts:891
+Defined in: index.d.ts:903
 
 数据源
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:891
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:875
+Defined in: index.d.ts:887
 
 数据库id
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:875
 
 > **layers**: [`ILayer`](../type-aliases/ILayer.md)[]
 
-Defined in: index.d.ts:887
+Defined in: index.d.ts:899
 
 图层
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:887
 
 > **layersIndex**: [`LayerIndex`](LayerIndex.md)[]
 
-Defined in: index.d.ts:889
+Defined in: index.d.ts:901
 
 图层位置
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:889
 
 > **name**: `string`
 
-Defined in: index.d.ts:877
+Defined in: index.d.ts:889
 
 地图名
 
@@ -106,7 +106,7 @@ Defined in: index.d.ts:877
 
 > **scale**: `number`
 
-Defined in: index.d.ts:881
+Defined in: index.d.ts:893
 
 地图当前比例尺
 
@@ -116,7 +116,7 @@ Defined in: index.d.ts:881
 
 > **symbolLibrary**: [`ISymbolLibrary`](ISymbolLibrary.md)
 
-Defined in: index.d.ts:893
+Defined in: index.d.ts:905
 
 符号库
 
@@ -126,4 +126,4 @@ Defined in: index.d.ts:893
 
 > **version**: `1`
 
-Defined in: index.d.ts:871
+Defined in: index.d.ts:883

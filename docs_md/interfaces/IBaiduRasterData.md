@@ -6,7 +6,7 @@
 
 # Interface: IBaiduRasterData
 
-Defined in: index.d.ts:226
+Defined in: index.d.ts:238
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:226
 
 > **provider**: `"bd09"`
 
-Defined in: index.d.ts:227
+Defined in: index.d.ts:239
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:227
 
 > **url**: `string`
 
-Defined in: index.d.ts:228
+Defined in: index.d.ts:240

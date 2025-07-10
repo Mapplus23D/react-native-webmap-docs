@@ -6,7 +6,7 @@
 
 # Interface: IFillStyle
 
-Defined in: index.d.ts:328
+Defined in: index.d.ts:340
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:328
 
 > **fillColor**: `string`
 
-Defined in: index.d.ts:336
+Defined in: index.d.ts:348
 
 填充颜色
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:336
 
 > **fillOpacity**: `number`
 
-Defined in: index.d.ts:342
+Defined in: index.d.ts:354
 
 填充不透明度。0 透明， 1 不透明
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:342
 
 > **fillOutlineColor**: `string`
 
-Defined in: index.d.ts:350
+Defined in: index.d.ts:362
 
 轮廓颜色
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:350
 
 > **fillOutlineSymbol**: `string`
 
-Defined in: index.d.ts:346
+Defined in: index.d.ts:358
 
 边框符号id
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:346
 
 > **fillOutlineWidth**: `number`
 
-Defined in: index.d.ts:354
+Defined in: index.d.ts:366
 
 轮廓宽度。默认 1px
 
@@ -66,6 +66,6 @@ Defined in: index.d.ts:354
 
 > **fillSymbol**: `string`
 
-Defined in: index.d.ts:332
+Defined in: index.d.ts:344
 
 面符号id

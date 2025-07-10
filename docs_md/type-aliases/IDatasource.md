@@ -8,4 +8,4 @@
 
 > **IDatasource** = [`IGeoJSONDatasource`](../interfaces/IGeoJSONDatasource.md) \| [`IRasterTileDatasource`](../interfaces/IRasterTileDatasource.md) \| [`IVectorTileDatasource`](../interfaces/IVectorTileDatasource.md)
 
-Defined in: index.d.ts:825
+Defined in: index.d.ts:837

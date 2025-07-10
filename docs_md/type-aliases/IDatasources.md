@@ -8,7 +8,7 @@
 
 > **IDatasources** = `object`
 
-Defined in: index.d.ts:1311
+Defined in: index.d.ts:1323
 
 数据管理模块
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:1311
 
 > **add**: (`param`) => `string` \| `null`
 
-Defined in: index.d.ts:1317
+Defined in: index.d.ts:1329
 
 添加数据源
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:1317
 
 > **addFieldInfo**: (`dsId`, `info`, `index?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1437
+Defined in: index.d.ts:1449
 
 添加属性
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:1437
 
 > **addNew**: (`sourceId`, `params`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1329
+Defined in: index.d.ts:1341
 
 添加对象
 
@@ -108,7 +108,7 @@ Defined in: index.d.ts:1329
 
 > **addText**: (`sourceId`, `text`) => `Promise`\<`number` \| `undefined`\>
 
-Defined in: index.d.ts:1335
+Defined in: index.d.ts:1347
 
 添加文字
 
@@ -156,7 +156,7 @@ Defined in: index.d.ts:1335
 
 > **deleteObjects**: (`sourceId`, `objectIds`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1350
+Defined in: index.d.ts:1362
 
 删除对象
 
@@ -184,7 +184,7 @@ Defined in: index.d.ts:1350
 
 > **getCurrentRecordId**: (`sourceId`) => `Promise`\<`number` \| `undefined`\>
 
-Defined in: index.d.ts:1370
+Defined in: index.d.ts:1382
 
 获取当前记录的对象的几何id
 
@@ -206,7 +206,7 @@ Defined in: index.d.ts:1370
 
 > **getFieldInfos**: (`dsId`, `indexes?`) => `Promise`\<[`IFieldInfo`](../interfaces/IFieldInfo.md)[]\>
 
-Defined in: index.d.ts:1429
+Defined in: index.d.ts:1441
 
 获取数据源字段信息
 
@@ -234,7 +234,7 @@ Defined in: index.d.ts:1429
 
 > **getFieldInfosCount**: (`dsId`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:1422
+Defined in: index.d.ts:1434
 
 获取数据源字段信息数量
 
@@ -256,7 +256,7 @@ Defined in: index.d.ts:1422
 
 > **getGeometry**: (`sourceId`, `geoId`) => `Promise`\<[`IGeoJSONFeature`](../interfaces/IGeoJSONFeature.md) \| `undefined`\>
 
-Defined in: index.d.ts:1364
+Defined in: index.d.ts:1376
 
 获取
 
@@ -284,7 +284,7 @@ Defined in: index.d.ts:1364
 
 > **getRecordsetFieldValue**: (`params`) => `Promise`\<`string` \| `number` \| `boolean` \| `null` \| `undefined`\>
 
-Defined in: index.d.ts:1398
+Defined in: index.d.ts:1410
 
 获取指定字段的值
 
@@ -320,7 +320,7 @@ indexOrName 属性序号或者名称
 
 > **getSource**: (`id`) => [`IGeoJSONDatasource`](../interfaces/IGeoJSONDatasource.md) \| [`IRasterTileDatasource`](../interfaces/IRasterTileDatasource.md) \| `null`
 
-Defined in: index.d.ts:1323
+Defined in: index.d.ts:1335
 
 添加数据源
 
@@ -342,7 +342,7 @@ Defined in: index.d.ts:1323
 
 > **indexOfFieldInfo**: (`dsId`, `name`) => `Promise`\<`number`\>
 
-Defined in: index.d.ts:1459
+Defined in: index.d.ts:1471
 
 根据名称获取属性位置
 
@@ -372,7 +372,7 @@ Defined in: index.d.ts:1459
 
 > **moveFieldInfo**: (`dsId`, `name`, `before?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1445
+Defined in: index.d.ts:1457
 
 移动属性位置
 
@@ -406,7 +406,7 @@ Defined in: index.d.ts:1445
 
 > **recordsetFromGeoJSON**: (`sourceId`, `geoJSON`, `replaceById`, `dbIdIgnore`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:1409
+Defined in: index.d.ts:1421
 
 从 GeoJSON 对象中导入几何对象及其属性值
 
@@ -444,7 +444,7 @@ Defined in: index.d.ts:1409
 
 > **recordsetToGeoJSON**: (`sourceId`, `hasAttribute`, `count`) => `Promise`\<[`IGeoJSONData`](IGeoJSONData.md) \| `undefined`\>
 
-Defined in: index.d.ts:1416
+Defined in: index.d.ts:1428
 
 从当前记录起，将 recordset 中指定数量的记录转出 GeoJSON 对象
 
@@ -478,7 +478,7 @@ Defined in: index.d.ts:1416
 
 > **removeFieldInfo**: (`dsId`, `nameOrIndex`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1452
+Defined in: index.d.ts:1464
 
 删除指定属性
 
@@ -506,7 +506,7 @@ Defined in: index.d.ts:1452
 
 > **setGeometry**: (`sourceId`, `geo`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1357
+Defined in: index.d.ts:1369
 
 设置当前记录的几何对象，覆盖原来的对象
 
@@ -534,7 +534,7 @@ Defined in: index.d.ts:1357
 
 > **setRecordsetFieldValue**: (`params`) => `Promise`\<`void`\>
 
-Defined in: index.d.ts:1382
+Defined in: index.d.ts:1394
 
 设置当前对象的属性值
 
@@ -575,7 +575,7 @@ value 要设置的属性值
 
 > **updateCaption**: (`dsId`, `caption`, `index`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1467
+Defined in: index.d.ts:1479
 
 更改caption
 

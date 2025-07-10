@@ -6,7 +6,7 @@
 
 # Interface: ILayerImage
 
-Defined in: index.d.ts:473
+Defined in: index.d.ts:485
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:473
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:847
+Defined in: index.d.ts:859
 
 数据库id
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:847
 
 > **id**: `string`
 
-Defined in: index.d.ts:843
+Defined in: index.d.ts:855
 
 图层id
 
@@ -46,7 +46,7 @@ Defined in: index.d.ts:843
 
 > **maxVisibleScale**: `number`
 
-Defined in: index.d.ts:855
+Defined in: index.d.ts:867
 
 最大可见比例尺
 
@@ -60,7 +60,7 @@ Defined in: index.d.ts:855
 
 > `optional` **metadata**: `unknown`
 
-Defined in: index.d.ts:863
+Defined in: index.d.ts:875
 
 自定义数据
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:863
 
 > **minVisibleScale**: `number`
 
-Defined in: index.d.ts:859
+Defined in: index.d.ts:871
 
 最小可见比例尺
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:859
 
 > **name**: `string`
 
-Defined in: index.d.ts:839
+Defined in: index.d.ts:851
 
 图层名
 
@@ -102,7 +102,7 @@ Defined in: index.d.ts:839
 
 > **sourceId**: `string`
 
-Defined in: index.d.ts:475
+Defined in: index.d.ts:487
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: index.d.ts:475
 
 > **type**: `"image"`
 
-Defined in: index.d.ts:474
+Defined in: index.d.ts:486
 
 #### Overrides
 
@@ -122,7 +122,7 @@ Defined in: index.d.ts:474
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:851
+Defined in: index.d.ts:863
 
 是否可见
 

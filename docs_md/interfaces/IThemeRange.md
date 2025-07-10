@@ -6,7 +6,7 @@
 
 # Interface: IThemeRange
 
-Defined in: index.d.ts:590
+Defined in: index.d.ts:602
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:590
 
 > **defaultStyle**: `Partial`\<[`IGeoStyle`](../type-aliases/IGeoStyle.md)\>
 
-Defined in: index.d.ts:595
+Defined in: index.d.ts:607
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: index.d.ts:595
 
 > **expression**: `string`
 
-Defined in: index.d.ts:592
+Defined in: index.d.ts:604
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: index.d.ts:592
 
 > **items**: [`IThemeRangeItem`](IThemeRangeItem.md)[]
 
-Defined in: index.d.ts:594
+Defined in: index.d.ts:606
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:594
 
 > **rangeMode**: [`RangeMode`](../enumerations/RangeMode.md)
 
-Defined in: index.d.ts:593
+Defined in: index.d.ts:605
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: index.d.ts:593
 
 > **type**: `"range"`
 
-Defined in: index.d.ts:591
+Defined in: index.d.ts:603

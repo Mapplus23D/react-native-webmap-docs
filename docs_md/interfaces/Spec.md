@@ -6,7 +6,7 @@
 
 # Interface: Spec
 
-Defined in: index.d.ts:2104
+Defined in: index.d.ts:2116
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:2104
 
 > **activate**(`serialNo`): `Promise`\<[`ILicenseActivateResult`](ILicenseActivateResult.md)\>
 
-Defined in: index.d.ts:2126
+Defined in: index.d.ts:2138
 
 通过序列号激活
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:2126
 
 > **getClientUrl**(): `string`
 
-Defined in: index.d.ts:2121
+Defined in: index.d.ts:2133
 
 获取 client web 服务地址
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:2121
 
 > **getLicenseInfo**(): `Promise`\<`undefined` \| [`ILicenseInfo`](ILicenseInfo.md)\>
 
-Defined in: index.d.ts:2131
+Defined in: index.d.ts:2143
 
 获取当前许可信息
 
@@ -70,7 +70,7 @@ Defined in: index.d.ts:2131
 
 > **getResourceBase**(): `string`
 
-Defined in: index.d.ts:2117
+Defined in: index.d.ts:2129
 
 获取资源地址
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:2117
 
 > **getServiceBase**(): `string`
 
-Defined in: index.d.ts:2113
+Defined in: index.d.ts:2125
 
 获取 client 服务地址
 
@@ -98,7 +98,7 @@ Defined in: index.d.ts:2113
 
 > **importSource**(`filter?`): `Promise`\<[`ImportResult`](ImportResult.md)[]\>
 
-Defined in: index.d.ts:2136
+Defined in: index.d.ts:2148
 
 导入source文件到内部存储
 
@@ -120,7 +120,7 @@ Defined in: index.d.ts:2136
 
 > **initEnvironment**(`clientPort?`): `void`
 
-Defined in: index.d.ts:2109
+Defined in: index.d.ts:2121
 
 初始化环境
 

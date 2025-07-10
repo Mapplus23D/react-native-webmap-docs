@@ -6,7 +6,7 @@
 
 # Interface: IThemeLabelRange
 
-Defined in: index.d.ts:597
+Defined in: index.d.ts:609
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:597
 
 > **defaultStyle**: `Partial`\<[`ITextStyle`](ITextStyle.md)\>
 
-Defined in: index.d.ts:603
+Defined in: index.d.ts:615
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:603
 
 > **items**: [`IThemeLabelRangeItem`](IThemeLabelRangeItem.md)[]
 
-Defined in: index.d.ts:602
+Defined in: index.d.ts:614
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:602
 
 > **labelExpression**: `string`
 
-Defined in: index.d.ts:599
+Defined in: index.d.ts:611
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: index.d.ts:599
 
 > **rangeExpression**: `string`
 
-Defined in: index.d.ts:600
+Defined in: index.d.ts:612
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:600
 
 > **rangeMode**: [`RangeMode`](../enumerations/RangeMode.md)
 
-Defined in: index.d.ts:601
+Defined in: index.d.ts:613
 
 ***
 
@@ -58,7 +58,7 @@ Defined in: index.d.ts:601
 
 > **type**: `"label_range"`
 
-Defined in: index.d.ts:598
+Defined in: index.d.ts:610
 
 #### Overrides
 

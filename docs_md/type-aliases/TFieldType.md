@@ -8,6 +8,6 @@
 
 > **TFieldType** = `"TEXT"` \| `"INT"` \| `"FLOAT"` \| `"BOOLEAN"`
 
-Defined in: index.d.ts:132
+Defined in: index.d.ts:144
 
 字段类型

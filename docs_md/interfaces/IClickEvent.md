@@ -6,7 +6,7 @@
 
 # Interface: IClickEvent
 
-Defined in: index.d.ts:898
+Defined in: index.d.ts:910
 
 点击事件
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:898
 
 > **lnglat**: [`IPoint2D`](../type-aliases/IPoint2D.md)
 
-Defined in: index.d.ts:900
+Defined in: index.d.ts:912
 
 经纬度点
 
@@ -26,6 +26,6 @@ Defined in: index.d.ts:900
 
 > **point**: [`IPoint2D`](../type-aliases/IPoint2D.md)
 
-Defined in: index.d.ts:902
+Defined in: index.d.ts:914
 
 屏幕点

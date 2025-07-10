@@ -6,7 +6,7 @@
 
 # Interface: ILineCollection
 
-Defined in: index.d.ts:1041
+Defined in: index.d.ts:1053
 
 线对象数组
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:1041
 
 > **geometries**: ([`IGeoJSONLine`](IGeoJSONLine.md) \| [`IGeoJSONMultiLine`](IGeoJSONMultiLine.md))[]
 
-Defined in: index.d.ts:1043
+Defined in: index.d.ts:1055
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: index.d.ts:1043
 
 > **type**: `"GeometryCollection"`
 
-Defined in: index.d.ts:1042
+Defined in: index.d.ts:1054

@@ -8,7 +8,7 @@
 
 > **ITheme** = `object`
 
-Defined in: index.d.ts:1961
+Defined in: index.d.ts:1973
 
 专题图图模块
 
@@ -20,7 +20,7 @@ Defined in: index.d.ts:1961
 
 > **addRangeItem**: (`layerId`, `params`, `index?`) => `Promise`\<`boolean`\>
 
-Defined in: index.d.ts:1990
+Defined in: index.d.ts:2002
 
 分段专题图新增分段
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:1990
 
 > **addUniqueItem**: (`layerId`, `params`, `index?`) => `boolean`
 
-Defined in: index.d.ts:2013
+Defined in: index.d.ts:2025
 
 单值专题图新增单值
 
@@ -88,7 +88,7 @@ Defined in: index.d.ts:2013
 
 > **createLabelRangeTheme**: (`params`) => `Promise`\<[`IThemeLabelRange`](../interfaces/IThemeLabelRange.md) \| `undefined`\>
 
-Defined in: index.d.ts:2043
+Defined in: index.d.ts:2055
 
 #### Parameters
 
@@ -146,7 +146,7 @@ Defined in: index.d.ts:2043
 
 > **createLabelTheme**: (`params`) => [`IThemeLabel`](../interfaces/IThemeLabel.md) \| `undefined`
 
-Defined in: index.d.ts:2019
+Defined in: index.d.ts:2031
 
 创建统一标签专题图
 
@@ -194,7 +194,7 @@ Defined in: index.d.ts:2019
 
 > **createLabelUniqueTheme**: (`params`) => `Promise`\<[`IThemeLabelUnique`](../interfaces/IThemeLabelUnique.md) \| `undefined`\>
 
-Defined in: index.d.ts:2031
+Defined in: index.d.ts:2043
 
 #### Parameters
 
@@ -240,7 +240,7 @@ Defined in: index.d.ts:2031
 
 > **createRangeTheme**: (`params`) => `Promise`\<[`IThemeRange`](../interfaces/IThemeRange.md) \| `undefined`\>
 
-Defined in: index.d.ts:1967
+Defined in: index.d.ts:1979
 
 创建分段专题图
 
@@ -300,7 +300,7 @@ Defined in: index.d.ts:1967
 
 > **createUniqueTheme**: (`params`) => `Promise`\<[`IThemeUnique`](../interfaces/IThemeUnique.md) \| `undefined`\>
 
-Defined in: index.d.ts:1996
+Defined in: index.d.ts:2008
 
 创建单值专题图
 

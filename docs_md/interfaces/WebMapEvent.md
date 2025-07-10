@@ -6,7 +6,7 @@
 
 # Interface: WebMapEvent
 
-Defined in: index.d.ts:1120
+Defined in: index.d.ts:1132
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1120
 
 > **onActionChange**: `object`
 
-Defined in: index.d.ts:1167
+Defined in: index.d.ts:1179
 
 action 切换回调
 
@@ -30,7 +30,7 @@ action 切换回调
 
 > **onCenterChanged**: `object`
 
-Defined in: index.d.ts:1199
+Defined in: index.d.ts:1211
 
 地图拖动时中心变化
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:1199
 
 > **onDrawRectBoundsChange**: `object`
 
-Defined in: index.d.ts:1156
+Defined in: index.d.ts:1168
 
 draw_rect_bounds结果回调
 
@@ -74,7 +74,7 @@ draw_rect_bounds结果回调
 
 > **onGeometryAdded**: [`IGeometryEvent`](IGeometryEvent.md)
 
-Defined in: index.d.ts:1173
+Defined in: index.d.ts:1185
 
 对象通过手势添加事件
 
@@ -84,7 +84,7 @@ Defined in: index.d.ts:1173
 
 > **onGeometryDeleted**: [`IGeometryEvent`](IGeometryEvent.md)
 
-Defined in: index.d.ts:1181
+Defined in: index.d.ts:1193
 
 对象通过手势删除事件
 
@@ -94,7 +94,7 @@ Defined in: index.d.ts:1181
 
 > **onGeometryModified**: [`IGeometryEvent`](IGeometryEvent.md)
 
-Defined in: index.d.ts:1177
+Defined in: index.d.ts:1189
 
 对象通过手势修改事件
 
@@ -104,7 +104,7 @@ Defined in: index.d.ts:1177
 
 > **onMeasureResult**: `object`
 
-Defined in: index.d.ts:1185
+Defined in: index.d.ts:1197
 
 量算实时结果回调
 
@@ -122,7 +122,7 @@ Defined in: index.d.ts:1185
 
 > **onMultiSelect**: `object`
 
-Defined in: index.d.ts:1147
+Defined in: index.d.ts:1159
 
 多选状态下的监事件
 
@@ -138,7 +138,7 @@ Defined in: index.d.ts:1147
 
 > **onSelect**: `object`
 
-Defined in: index.d.ts:1124
+Defined in: index.d.ts:1136
 
 选择状态下的监事件
 
@@ -177,7 +177,7 @@ Defined in: index.d.ts:1124
 
 > **onSelectCancle**: `null`
 
-Defined in: index.d.ts:1143
+Defined in: index.d.ts:1155
 
 选择状态下的监事件
 
@@ -187,7 +187,7 @@ Defined in: index.d.ts:1143
 
 > **onZoomEnd**: `object`
 
-Defined in: index.d.ts:1192
+Defined in: index.d.ts:1204
 
 比例尺变化
 

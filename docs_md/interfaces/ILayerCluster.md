@@ -6,7 +6,7 @@
 
 # Interface: ILayerCluster
 
-Defined in: index.d.ts:437
+Defined in: index.d.ts:449
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:437
 
 > `optional` **clusterSteps**: `number`[]
 
-Defined in: index.d.ts:466
+Defined in: index.d.ts:478
 
 聚合分层风格
 
@@ -28,7 +28,7 @@ Defined in: index.d.ts:466
 
 > `optional` **clusterStyles**: `Partial`\<`Omit`\<[`IPointStyle`](IPointStyle.md), `"circleSymbol"`\>\>[]
 
-Defined in: index.d.ts:467
+Defined in: index.d.ts:479
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:467
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:847
+Defined in: index.d.ts:859
 
 数据库id
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:847
 
 > **editable**: `boolean`
 
-Defined in: index.d.ts:451
+Defined in: index.d.ts:463
 
 是否可编辑
 所有图层中只能同时有一个可编辑的图层
@@ -61,7 +61,7 @@ Defined in: index.d.ts:451
 
 > **id**: `string`
 
-Defined in: index.d.ts:843
+Defined in: index.d.ts:855
 
 图层id
 
@@ -75,7 +75,7 @@ Defined in: index.d.ts:843
 
 > **maxVisibleScale**: `number`
 
-Defined in: index.d.ts:855
+Defined in: index.d.ts:867
 
 最大可见比例尺
 
@@ -89,7 +89,7 @@ Defined in: index.d.ts:855
 
 > `optional` **metadata**: `unknown`
 
-Defined in: index.d.ts:863
+Defined in: index.d.ts:875
 
 自定义数据
 
@@ -103,7 +103,7 @@ Defined in: index.d.ts:863
 
 > **minVisibleScale**: `number`
 
-Defined in: index.d.ts:859
+Defined in: index.d.ts:871
 
 最小可见比例尺
 
@@ -117,7 +117,7 @@ Defined in: index.d.ts:859
 
 > **name**: `string`
 
-Defined in: index.d.ts:839
+Defined in: index.d.ts:851
 
 图层名
 
@@ -131,7 +131,7 @@ Defined in: index.d.ts:839
 
 > `optional` **pointStyle**: `Partial`\<`Omit`\<[`IPointStyle`](IPointStyle.md), `"circleSymbol"`\>\>
 
-Defined in: index.d.ts:455
+Defined in: index.d.ts:467
 
 原始点的风格
 
@@ -141,7 +141,7 @@ Defined in: index.d.ts:455
 
 > **selectable**: `boolean`
 
-Defined in: index.d.ts:446
+Defined in: index.d.ts:458
 
 是否可选
 
@@ -151,7 +151,7 @@ Defined in: index.d.ts:446
 
 > `optional` **selectionStyle**: `Partial`\<`Omit`\<[`IPointStyle`](IPointStyle.md), `"circleSymbol"`\>\>
 
-Defined in: index.d.ts:471
+Defined in: index.d.ts:483
 
 选择集风格
 
@@ -161,7 +161,7 @@ Defined in: index.d.ts:471
 
 > **sourceId**: `string`
 
-Defined in: index.d.ts:442
+Defined in: index.d.ts:454
 
 数据源id
 
@@ -171,7 +171,7 @@ Defined in: index.d.ts:442
 
 > `optional` **textStyle**: `object`
 
-Defined in: index.d.ts:459
+Defined in: index.d.ts:471
 
 聚合后数字风格
 
@@ -189,7 +189,7 @@ Defined in: index.d.ts:459
 
 > **type**: `"cluster"`
 
-Defined in: index.d.ts:438
+Defined in: index.d.ts:450
 
 #### Overrides
 
@@ -201,7 +201,7 @@ Defined in: index.d.ts:438
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:851
+Defined in: index.d.ts:863
 
 是否可见
 

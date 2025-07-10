@@ -6,7 +6,7 @@
 
 # Enumeration: Action
 
-Defined in: index.d.ts:241
+Defined in: index.d.ts:253
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:241
 
 > **draw\_line**: `"draw_line"`
 
-Defined in: index.d.ts:273
+Defined in: index.d.ts:285
 
 在可编辑线图层上进行线对象绘制
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:273
 
 > **draw\_point**: `"draw_point"`
 
-Defined in: index.d.ts:269
+Defined in: index.d.ts:281
 
 在可编辑点图层上进行点对象绘制
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:269
 
 > **draw\_polygon**: `"draw_polygon"`
 
-Defined in: index.d.ts:277
+Defined in: index.d.ts:289
 
 在可编辑面图层上进行线对象绘制
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:277
 
 > **draw\_rect\_bounds**: `"draw_rect_bounds"`
 
-Defined in: index.d.ts:293
+Defined in: index.d.ts:305
 
 绘制框选区域
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:293
 
 > **edit\_vertex**: `"edit_vertex"`
 
-Defined in: index.d.ts:265
+Defined in: index.d.ts:277
 
 在选中可编辑的`线`和`面`图层上的对象后，可进入节点编辑操作
 
@@ -66,7 +66,7 @@ Defined in: index.d.ts:265
 
 > **measure\_angle**: `"measure_angle"`
 
-Defined in: index.d.ts:289
+Defined in: index.d.ts:301
 
 进行线对象绘制并计算/显示夹角
 
@@ -76,7 +76,7 @@ Defined in: index.d.ts:289
 
 > **measure\_area**: `"measure_area"`
 
-Defined in: index.d.ts:281
+Defined in: index.d.ts:293
 
 进行面对象绘制并计算/显示面积
 
@@ -86,7 +86,7 @@ Defined in: index.d.ts:281
 
 > **measure\_length**: `"measure_length"`
 
-Defined in: index.d.ts:285
+Defined in: index.d.ts:297
 
 进行线对象绘制并计算/显示长度
 
@@ -96,7 +96,7 @@ Defined in: index.d.ts:285
 
 > **multiSelect**: `"multiSelect"`
 
-Defined in: index.d.ts:259
+Defined in: index.d.ts:271
 
 #### Deprecated
 
@@ -111,7 +111,7 @@ Defined in: index.d.ts:259
 
 > **pan**: `"pan"`
 
-Defined in: index.d.ts:246
+Defined in: index.d.ts:258
 
 浏览模式，不可选中，操作对象
 
@@ -121,7 +121,7 @@ Defined in: index.d.ts:246
 
 > **select**: `"select"`
 
-Defined in: index.d.ts:252
+Defined in: index.d.ts:264
 
 单选模式，选择对象，选择对象后会有选择回调
 

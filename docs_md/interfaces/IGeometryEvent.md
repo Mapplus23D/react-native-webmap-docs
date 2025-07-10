@@ -6,7 +6,7 @@
 
 # Interface: IGeometryEvent
 
-Defined in: index.d.ts:309
+Defined in: index.d.ts:321
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:309
 
 > **geometryId**: `number`
 
-Defined in: index.d.ts:311
+Defined in: index.d.ts:323
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: index.d.ts:311
 
 > **layerId**: `string`
 
-Defined in: index.d.ts:310
+Defined in: index.d.ts:322

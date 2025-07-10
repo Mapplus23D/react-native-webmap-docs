@@ -6,7 +6,7 @@
 
 # Enumeration: ColorSchemeType
 
-Defined in: index.d.ts:550
+Defined in: index.d.ts:562
 
 系统内置颜色方案
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:550
 
 > **DC\_Grass**: `"DC_Grass"`
 
-Defined in: index.d.ts:552
+Defined in: index.d.ts:564
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:552
 
 > **DD\_Warm**: `"DD_Warm"`
 
-Defined in: index.d.ts:553
+Defined in: index.d.ts:565
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:553
 
 > **LA\_Sky**: `"LA_Sky"`
 
-Defined in: index.d.ts:551
+Defined in: index.d.ts:563
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: index.d.ts:551
 
 > **ZA\_Oranges**: `"ZA_Oranges"`
 
-Defined in: index.d.ts:554
+Defined in: index.d.ts:566
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: index.d.ts:554
 
 > **ZB\_Reds**: `"ZB_Reds"`
 
-Defined in: index.d.ts:555
+Defined in: index.d.ts:567
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: index.d.ts:555
 
 > **ZC\_Lemons**: `"ZC_Lemons"`
 
-Defined in: index.d.ts:556
+Defined in: index.d.ts:568
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:556
 
 > **ZD\_Cyans**: `"ZD_Cyans"`
 
-Defined in: index.d.ts:557
+Defined in: index.d.ts:569
 
 ***
 
@@ -72,7 +72,7 @@ Defined in: index.d.ts:557
 
 > **ZE\_Greens**: `"ZE_Greens"`
 
-Defined in: index.d.ts:558
+Defined in: index.d.ts:570
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: index.d.ts:558
 
 > **ZF\_Blues**: `"ZF_Blues"`
 
-Defined in: index.d.ts:559
+Defined in: index.d.ts:571
 
 ***
 
@@ -88,4 +88,4 @@ Defined in: index.d.ts:559
 
 > **ZG\_Purples**: `"ZG_Purples"`
 
-Defined in: index.d.ts:560
+Defined in: index.d.ts:572

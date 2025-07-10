@@ -6,7 +6,7 @@
 
 # Interface: ISymbolPoint
 
-Defined in: index.d.ts:737
+Defined in: index.d.ts:749
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:737
 
 > **height**: `number`
 
-Defined in: index.d.ts:739
+Defined in: index.d.ts:751
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:739
 
 > **id**: `string`
 
-Defined in: index.d.ts:685
+Defined in: index.d.ts:697
 
 #### Inherited from
 
@@ -38,7 +38,7 @@ Defined in: index.d.ts:685
 
 > **name**: `string`
 
-Defined in: index.d.ts:684
+Defined in: index.d.ts:696
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ Defined in: index.d.ts:684
 
 > **url**: `string`
 
-Defined in: index.d.ts:740
+Defined in: index.d.ts:752
 
 ***
 
@@ -58,4 +58,4 @@ Defined in: index.d.ts:740
 
 > **width**: `number`
 
-Defined in: index.d.ts:738
+Defined in: index.d.ts:750

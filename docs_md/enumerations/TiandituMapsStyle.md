@@ -6,7 +6,7 @@
 
 # Enumeration: TiandituMapsStyle
 
-Defined in: index.d.ts:965
+Defined in: index.d.ts:977
 
 天地图服务类型常量
 
@@ -16,7 +16,7 @@ Defined in: index.d.ts:965
 
 > **CIA\_W**: `"cia_w"`
 
-Defined in: index.d.ts:967
+Defined in: index.d.ts:979
 
 全球中文注记服务（墨卡托)
 
@@ -26,7 +26,7 @@ Defined in: index.d.ts:967
 
 > **IMG\_W**: `"img_w"`
 
-Defined in: index.d.ts:969
+Defined in: index.d.ts:981
 
 全球矢量地图服务(墨卡托)
 
@@ -36,7 +36,7 @@ Defined in: index.d.ts:969
 
 > **TER\_W**: `"ter_w"`
 
-Defined in: index.d.ts:971
+Defined in: index.d.ts:983
 
 全球地形晕渲服务(墨卡托)
 
@@ -46,6 +46,6 @@ Defined in: index.d.ts:971
 
 > **VEC\_W**: `"vec_w"`
 
-Defined in: index.d.ts:973
+Defined in: index.d.ts:985
 
 全球矢量地图服务(墨卡托)

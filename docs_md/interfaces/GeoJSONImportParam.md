@@ -6,7 +6,7 @@
 
 # Interface: GeoJSONImportParam
 
-Defined in: index.d.ts:1071
+Defined in: index.d.ts:1083
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:1071
 
 > `optional` **filter**: (`"point"` \| `"line"` \| `"fill"`)[]
 
-Defined in: index.d.ts:1077
+Defined in: index.d.ts:1089
 
 想要转换的数据类型
 

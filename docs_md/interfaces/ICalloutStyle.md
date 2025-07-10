@@ -6,7 +6,7 @@
 
 # Interface: ICalloutStyle
 
-Defined in: index.d.ts:759
+Defined in: index.d.ts:771
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: index.d.ts:759
 
 > **background**: `string`
 
-Defined in: index.d.ts:771
+Defined in: index.d.ts:783
 
 内容框背景颜色
 
@@ -24,7 +24,7 @@ Defined in: index.d.ts:771
 
 > **boxShadow**: `string`
 
-Defined in: index.d.ts:791
+Defined in: index.d.ts:803
 
 内容边框阴影
 
@@ -34,7 +34,7 @@ Defined in: index.d.ts:791
 
 > **paddingBottom**: `number`
 
-Defined in: index.d.ts:787
+Defined in: index.d.ts:799
 
 内容框下边距
 
@@ -44,7 +44,7 @@ Defined in: index.d.ts:787
 
 > **paddingLeft**: `number`
 
-Defined in: index.d.ts:775
+Defined in: index.d.ts:787
 
 内容框左边距
 
@@ -54,7 +54,7 @@ Defined in: index.d.ts:775
 
 > **paddingRight**: `number`
 
-Defined in: index.d.ts:779
+Defined in: index.d.ts:791
 
 内容框右边距
 
@@ -64,7 +64,7 @@ Defined in: index.d.ts:779
 
 > **paddingTop**: `number`
 
-Defined in: index.d.ts:783
+Defined in: index.d.ts:795
 
 内容框上边距
 
@@ -74,7 +74,7 @@ Defined in: index.d.ts:783
 
 > **showTip**: `boolean`
 
-Defined in: index.d.ts:763
+Defined in: index.d.ts:775
 
 是否显示指向锚点的箭头
 
@@ -84,6 +84,6 @@ Defined in: index.d.ts:763
 
 > **tipColor**: `string`
 
-Defined in: index.d.ts:767
+Defined in: index.d.ts:779
 
 箭头颜色

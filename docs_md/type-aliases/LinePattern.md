@@ -8,4 +8,4 @@
 
 > **LinePattern** = [`DashedLine`](../interfaces/DashedLine.md) \| [`ContourLine`](../interfaces/ContourLine.md) \| [`WallLine`](../interfaces/WallLine.md) \| [`RulerLine`](../interfaces/RulerLine.md)
 
-Defined in: index.d.ts:694
+Defined in: index.d.ts:706

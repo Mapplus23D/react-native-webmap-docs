@@ -6,7 +6,7 @@
 
 # Interface: ILayerText
 
-Defined in: index.d.ts:477
+Defined in: index.d.ts:489
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: index.d.ts:477
 
 > `optional` **dbId**: `string`
 
-Defined in: index.d.ts:847
+Defined in: index.d.ts:859
 
 数据库id
 
@@ -32,7 +32,7 @@ Defined in: index.d.ts:847
 
 > **editable**: `boolean`
 
-Defined in: index.d.ts:491
+Defined in: index.d.ts:503
 
 是否可编辑
 所有图层中只能同时有一个可编辑的图层
@@ -43,7 +43,7 @@ Defined in: index.d.ts:491
 
 > **id**: `string`
 
-Defined in: index.d.ts:843
+Defined in: index.d.ts:855
 
 图层id
 
@@ -57,7 +57,7 @@ Defined in: index.d.ts:843
 
 > **maxVisibleScale**: `number`
 
-Defined in: index.d.ts:855
+Defined in: index.d.ts:867
 
 最大可见比例尺
 
@@ -71,7 +71,7 @@ Defined in: index.d.ts:855
 
 > `optional` **metadata**: `unknown`
 
-Defined in: index.d.ts:863
+Defined in: index.d.ts:875
 
 自定义数据
 
@@ -85,7 +85,7 @@ Defined in: index.d.ts:863
 
 > **minVisibleScale**: `number`
 
-Defined in: index.d.ts:859
+Defined in: index.d.ts:871
 
 最小可见比例尺
 
@@ -99,7 +99,7 @@ Defined in: index.d.ts:859
 
 > **name**: `string`
 
-Defined in: index.d.ts:839
+Defined in: index.d.ts:851
 
 图层名
 
@@ -113,7 +113,7 @@ Defined in: index.d.ts:839
 
 > **selectable**: `boolean`
 
-Defined in: index.d.ts:486
+Defined in: index.d.ts:498
 
 是否可选
 
@@ -123,7 +123,7 @@ Defined in: index.d.ts:486
 
 > **selectionStyle**: \{ `textColor`: `string`; \} \| \{ `haloColor`: `string`; \}
 
-Defined in: index.d.ts:499
+Defined in: index.d.ts:511
 
 选择集风格
 
@@ -151,7 +151,7 @@ Defined in: index.d.ts:499
 
 > **sourceId**: `string`
 
-Defined in: index.d.ts:482
+Defined in: index.d.ts:494
 
 数据源id
 
@@ -161,7 +161,7 @@ Defined in: index.d.ts:482
 
 > `optional` **textScaledBaseZoom**: `number`
 
-Defined in: index.d.ts:495
+Defined in: index.d.ts:507
 
 文字大小（像素）随地图缩放的基础zoom，undefined表示不随地图缩放
 
@@ -171,7 +171,7 @@ Defined in: index.d.ts:495
 
 > **type**: `"text"`
 
-Defined in: index.d.ts:478
+Defined in: index.d.ts:490
 
 #### Overrides
 
@@ -183,7 +183,7 @@ Defined in: index.d.ts:478
 
 > **visible**: `boolean`
 
-Defined in: index.d.ts:851
+Defined in: index.d.ts:863
 
 是否可见
 
