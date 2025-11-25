@@ -2,8 +2,10 @@
 
 webmap for react native
 
-* [SDK示例](https://github.com/Mapplus23D/web2dsdkrn/tree/main)
+* [Gitlab SDK示例](http://sc.supermap.com/mapplus/web2dsdkrn)
 
-* [SDK配置](https://github.com/Mapplus23D/react-native-webmap-docs/blob/main/docs_md/README.md)
+* [Github SDK示例](https://github.com/Mapplus23D/web2dsdkrn/tree/main)
 
-* [开发文档](https://github.com/Mapplus23D/react-native-webmap-docs/blob/main/docs_md/index.md)
+* [SDK配置](./docs_md/README.md)
+
+* [开发文档](./docs_md/index.md)
